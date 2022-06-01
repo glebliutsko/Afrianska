@@ -1,0 +1,8 @@
+.blue_button {
+    border-radius: 10px;    
+    padding: 15px 48px;
+    background: #5A98D0;   
+    color: white;
+    font-size: 16px;
+    border: none;
+}

@@ -1,0 +1,11 @@
+@import url(reset.css);
+@import url(fonts.css);
+@import url(button.css);
+
+@import url(header.css);
+@import url(hello_section.css);
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+}
