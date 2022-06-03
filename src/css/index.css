@@ -2,8 +2,8 @@
 @import url(fonts.css);
 @import url(button.css);
 
-@import url(header.css);
-@import url(hello_section.css);
+@import url(blocks/header.css);
+@import url(blocks/hello_section.css);
 
 body {
     font-family: 'Gilroy', sans-serif;

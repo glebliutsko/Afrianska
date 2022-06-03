@@ -1,0 +1,28 @@
+{
+  "name": "mediasoft-prctice",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "postcss --verbose src/css/index.css --no-map -u postcss-import -u postcss-simple-vars -u postcss-media-minmax -u postcss-csso --output src/css/index.min.css",
+    "startdev": "npm run build -- --watch",
+    "brsync": "npx browser-sync start --server src --no-ui --cwd 'src' --files 'index.html,css/index.min.css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glebliutsko/MediaSoftPractice.git"
+  },
+  "author": "Gleb Liutsko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glebliutsko/MediaSoftPractice/issues"
+  },
+  "homepage": "https://github.com/glebliutsko/MediaSoftPractice#readme",
+  "dependencies": {
+    "postcss-cli": "^9.1.0",
+    "postcss-csso": "^6.0.0",
+    "postcss-import": "^14.1.0",
+    "postcss-media-minmax": "^5.0.0",
+    "postcss-simple-vars": "^6.0.3"
+  }
+}
