@@ -1,9 +1,10 @@
+@import url(color.css);
 @import url(reset.css);
 @import url(fonts.css);
 @import url(button.css);
 
 @import url(blocks/header.css);
-@import url(blocks/hello_section.css);
+@import url(blocks/home_page_hero.css);
 
 body {
     font-family: 'Gilroy', sans-serif;

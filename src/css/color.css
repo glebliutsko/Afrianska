@@ -1,0 +1,9 @@
+$blueOne: #1F3F68;
+$blueTwo: #316099;
+$blueThree: #356EAD;
+$blueFour: #5A98D0;
+$blueFive: #98C3E8;
+
+$headerGradient: linear-gradient(0deg,
+        rgba(152, 195, 232, 0.2) 8.84%,
+        rgba(152, 195, 232, 0) 31.12%);
