@@ -6,7 +6,7 @@
   "scripts": {
     "build": "postcss --verbose src/css/index.css --no-map -u postcss-import -u postcss-simple-vars -u postcss-media-minmax -u postcss-csso --output src/css/index.min.css",
     "startdev": "npm run build -- --watch",
-    "brsync": "npx browser-sync start --server src --no-ui --cwd 'src' --files 'index.html,css/index.min.css'"
+    "server": "cd src; npx live-server --port=7844 --no-browser"
   },
   "repository": {
     "type": "git",
