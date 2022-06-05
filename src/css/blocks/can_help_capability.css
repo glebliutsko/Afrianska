@@ -51,13 +51,13 @@ $paddingCard: 48px;
 /* .can-help-capability__header */
 .can-help-capability__header {
     font-size: 20px;
-    color: #1F3F68;
+    color: $blueOne;
 }
 
 /* .can-help-capability__content */
 .can-help-capability__content {
     margin-top: 16px;
-    color: #1F3F68;
+    color: $blueOne;
 }
 
 /* .can-help-capability__learn-more */
@@ -68,7 +68,14 @@ $paddingCard: 48px;
     margin-top: 39px;
 
     text-decoration: none;
+    transition: color 0.2s;
     color: $blueFour;
+}
+
+.can-help-capability__learn-more:hover {
+    text-decoration: underline;
+
+    color: $blueFourHover;
 }
 
 /* .can-help-capability__learn-more-text */

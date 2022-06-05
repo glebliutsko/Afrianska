@@ -1,29 +1,13 @@
 /* .project */
 .project {
+    position: relative;
     height: 417px;
+    transition: 0.2s;
 
+    overflow: hidden;
     border-radius: 10px;
-}
 
-.project_smart-home {
-    background:
-        url(/img/project/1.1.svg) no-repeat,
-        linear-gradient(89.99deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
-        url(/img/project/1.png);
-
-    background-position: bottom left;
-}
-
-.project_spark-app {
-    background:
-        linear-gradient(308.85deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
-        url(/img/project/2.png) no-repeat;
-}
-
-.project_car-rapetition {
-    background:
-        linear-gradient(306.48deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%),
-        url(/img/project/3.png) no-repeat;
+    cursor: pointer;
 }
 
 /* .project__header_container */
@@ -40,11 +24,49 @@
     }
 }
 
+/* .project__background */
+.project__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
+
+.project__background * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    user-select: none;
+}
+
+/* .project__background-image */
+.project__background-image {
+    transition: transform 0.2s;
+}
+
+.project:hover .project__background-image {
+    transform: scale(110%);
+}
+
+/* .project__background-gradient */
+.project__background-gradient {
+    background: linear-gradient(308.85deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%);
+}
+
 /* .project__header */
 .project__header {
     font-size: 28px;
     line-height: 46px;
     font-weight: normal;
+}
+
+.project:hover .project__header {
+    text-decoration: underline;
 }
 
 /* .project__sub-header */
