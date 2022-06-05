@@ -1,0 +1,60 @@
+$twoColumnSize: 925px;
+
+/* .can-help */
+.can-help {
+    margin: auto;
+    margin-top: 192px;
+
+    max-width: 940px;
+}
+
+/* .can-help__header */
+.can-help__header {
+    color: $blueTwo;
+    font-size: 35px;
+    width: 380px;
+}
+
+@media (width > $twoColumnSize) {
+    .can-help__header {
+        position: absolute;
+    }
+}
+
+@media (width <= $twoColumnSize) {
+    .can-help__header {
+        margin: auto;
+
+        margin-bottom: 50px;
+    }
+}
+
+/* .can-help__capabilities */
+.can-help__capabilities {
+    display: grid;
+
+    justify-content: center;
+}
+
+@media (width > $twoColumnSize) {
+    .can-help__capabilities {
+        grid-template-columns: auto auto;
+        gap: 100px;
+    }
+}
+
+@media (width <= $twoColumnSize) {
+    .can-help__capabilities {
+        grid-template-columns: auto;
+        gap: 50px
+    }
+}
+
+/* .can-help__first */
+@media (width > $twoColumnSize) {
+    .can-help__first {
+        grid-row: span 2;
+        
+        align-self: center;
+    }
+}

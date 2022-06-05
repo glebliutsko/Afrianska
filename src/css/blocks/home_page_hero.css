@@ -9,9 +9,8 @@ $rowsHeaderSize: 750px;
 /* .home-page-hero__body */
 .home-page-hero__body {
     display: grid;
-    max-width: 1130px;
+    max-width: 940px;
     margin: auto;
-
     padding: 0 10px;
 }
 
