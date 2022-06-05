@@ -1,31 +1,44 @@
-$twoColumnSize: 925px;
+$oneColumnCanHelp: 750px;
 
 /* .can-help */
 .can-help {
     margin: auto;
-    margin-top: 192px;
+    padding: 0 10px 0 10px;
 
-    max-width: 940px;
+    width: 100%;
+    max-width: $desktopContentWidth;
+}
+
+@media (width >=$oneColumnCanHelp) {
+    .can-help {
+        margin-top: 192px;
+    }
+}
+
+@media (width < $oneColumnCanHelp) {
+    .can-help {
+        margin-top: 50px;
+    }
 }
 
 /* .can-help__header */
 .can-help__header {
     color: $blueTwo;
     font-size: 35px;
-    width: 380px;
 }
 
-@media (width > $twoColumnSize) {
+@media (width >=$oneColumnCanHelp) {
     .can-help__header {
         position: absolute;
+
+        width: 100%;
+        max-width: 380px;
     }
 }
 
-@media (width <=$twoColumnSize) {
+@media (width < $oneColumnCanHelp) {
     .can-help__header {
-        margin: 0 10px;
-        margin: auto;
-
+        text-align: center;
         margin-bottom: 50px;
     }
 }
@@ -33,29 +46,28 @@ $twoColumnSize: 925px;
 /* .can-help__capabilities */
 .can-help__capabilities {
     display: grid;
-
-    justify-content: center;
 }
 
-@media (width > $twoColumnSize) {
+@media (width >=$oneColumnCanHelp) {
     .can-help__capabilities {
+        justify-content: space-evenly;
         grid-template-columns: auto auto;
-        gap: 100px;
+        row-gap: 100px;
     }
 }
 
-@media (width <=$twoColumnSize) {
+@media (width < $oneColumnCanHelp) {
     .can-help__capabilities {
+        justify-content: center;
         grid-template-columns: auto;
-        gap: 50px
+        row-gap: 50px;
     }
 }
 
 /* .can-help__first */
-@media (width > $twoColumnSize) {
-    .can-help__first {
+@media (width >=$oneColumnCanHelp) {
+    .can-help__capabilities .can-help-capability:first-child {
         grid-row: span 2;
-
         align-self: center;
     }
 }

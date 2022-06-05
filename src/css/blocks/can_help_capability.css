@@ -1,8 +1,11 @@
+$paddingCard: 48px;
+
 /* .can-help-capability */
 .can-help-capability {
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    box-shadow:
+        5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
-    padding: 48px;
+    padding: $paddingCard;
 
     width: 360px;
     height: 525px;
@@ -10,21 +13,39 @@
 
 /* .can-help-capability__image_container */
 .can-help-capability__image_container {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    width: 225px;
-    height: 225px;
+    width: calc(100% + $paddingCard * 2);
+    height: calc(180px + $paddingCard);
+    margin-left: -$paddingCard;
+    margin-top: -$paddingCard;
 }
 
 /* .can-help-capability__image */
-.can-help-capability__image {
-    position: absolute;
-    display: block;
+.can-help-capability__image_internet {
+    width: 182px;
+    height: 132px;
 
-    margin-top: -10px;
-    
-    width: 225px;
-    height: 225px;
+    position: relative;
+    left: -20.2px;
+}
+
+.can-help-capability__image_home {
+    width: 224px;
+    height: 197px;
+
+    position: relative;
+    top: -43px;
+}
+
+.can-help-capability__image_your-need {
+    width: 156px;
+    height: 131px;
+
+    position: relative;
+    left: -23.84px;
 }
 
 /* .can-help-capability__header */
