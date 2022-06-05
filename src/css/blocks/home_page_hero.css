@@ -40,11 +40,16 @@ $rowsHeaderSize: 750px;
 /* .home-page-hero__subtitle */
 .home-page-hero__subtitle {
     color: $blueOne;
+    margin-top: 32px;
+    letter-spacing: 0.05em;
+    line-height: 26px;
+    opacity: 0.6;
 }
 
 /* .home-page-hero__see_projects_button */
 .home-page-hero__see-projects-button {
-    margin-top: 10px;
+    margin-top: 71px;
+    margin-bottom: 190px;
 }
 
 /* .home-page-hero__illustration */

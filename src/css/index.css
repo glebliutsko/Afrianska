@@ -7,6 +7,8 @@
 @import url(blocks/home_page_hero.css);
 @import url(blocks/can_help.css);
 @import url(blocks/can_help_capability.css);
+@import url(blocks/project.css);
+@import url(blocks/finished_projects.css);
 
 body {
     font-family: 'Gilroy', sans-serif;

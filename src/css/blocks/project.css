@@ -1,0 +1,54 @@
+/* .project */
+.project {
+    height: 417px;
+
+    border-radius: 10px;
+}
+
+.project_smart-home {
+    background:
+        url(/img/project/1.1.svg) no-repeat,
+        linear-gradient(89.99deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%),
+        url(/img/project/1.png);
+
+    background-position: bottom left;
+}
+
+.project_spark-app {
+    background:
+        linear-gradient(308.85deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
+        url(/img/project/2.png) no-repeat;
+}
+
+.project_car-rapetition {
+    background:
+        linear-gradient(306.48deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%),
+        url(/img/project/3.png) no-repeat;
+}
+
+/* .project__header_container */
+.project__header_container {
+    margin: 24px auto auto 32px;
+    color: white;
+}
+
+@media (width >= 925px) {
+    .project:first-child .project__header_container {
+        width: fit-content;
+        text-align: right;
+        margin: 48px 25px auto auto;
+    }
+}
+
+/* .project__header */
+.project__header {
+    font-size: 28px;
+    line-height: 46px;
+    font-weight: normal;
+}
+
+/* .project__sub-header */
+.project__sub-header {
+    line-height: 46px;
+    margin-top: 4px;
+}

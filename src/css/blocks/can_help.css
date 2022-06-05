@@ -21,8 +21,9 @@ $twoColumnSize: 925px;
     }
 }
 
-@media (width <= $twoColumnSize) {
+@media (width <=$twoColumnSize) {
     .can-help__header {
+        margin: 0 10px;
         margin: auto;
 
         margin-bottom: 50px;
@@ -43,7 +44,7 @@ $twoColumnSize: 925px;
     }
 }
 
-@media (width <= $twoColumnSize) {
+@media (width <=$twoColumnSize) {
     .can-help__capabilities {
         grid-template-columns: auto;
         gap: 50px
@@ -54,7 +55,7 @@ $twoColumnSize: 925px;
 @media (width > $twoColumnSize) {
     .can-help__first {
         grid-row: span 2;
-        
+
         align-self: center;
     }
 }
