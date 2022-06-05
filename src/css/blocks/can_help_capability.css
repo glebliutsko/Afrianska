@@ -8,8 +8,7 @@
     height: 525px;
 }
 
-/* .can-help-capability__image */
-
+/* .can-help-capability__image_container */
 .can-help-capability__image_container {
     margin: auto;
 
@@ -17,6 +16,7 @@
     height: 225px;
 }
 
+/* .can-help-capability__image */
 .can-help-capability__image {
     position: absolute;
     display: block;

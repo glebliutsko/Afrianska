@@ -1,28 +1,48 @@
-$rowsHeaderSize: 750px;
+$illustrationIntersection: 60px;
 
 /* .home-page-hero */
 .home-page-hero {
-    padding-bottom: 10px;
     background: $headerGradient;
+
+    padding-bottom: 60px;
 }
 
 /* .home-page-hero__body */
 .home-page-hero__body {
     display: grid;
-    max-width: 940px;
-    margin: auto;
-    padding: 0 10px;
 }
 
-@media (width < $rowsHeaderSize) {
+@media (width >=$desktopMinWidthSize) {
     .home-page-hero__body {
+        align-items: center;
+        grid-template-columns: auto auto;
+
+        max-width: 1130px;
+        margin-left: calc((100% - $desktopMinWidthSize) / 2);
+        margin-right: 25px;
+    }
+}
+
+@media (width < $desktopMinWidthSize) {
+    .home-page-hero__body {
+        margin: 0 10px 0 10px;
+        justify-content: center;
         grid-row: auto auto;
     }
 }
 
-@media (width >= $rowsHeaderSize) {
-    .home-page-hero__body {
-        grid-template-columns: 1fr 1fr;
+/* .home-page-hero__text */
+.home-page-hero__text {
+
+}
+
+@media (width >= $desktopMinWidthSize) {
+    .home-page-hero__text {
+        width: 100%;
+        max-width: 530px;
+
+        top: -40px;
+        position: relative;
     }
 }
 
@@ -39,26 +59,47 @@ $rowsHeaderSize: 750px;
 
 /* .home-page-hero__subtitle */
 .home-page-hero__subtitle {
-    color: $blueOne;
     margin-top: 32px;
     letter-spacing: 0.05em;
     line-height: 26px;
     opacity: 0.6;
+
+    color: $blueOne;
 }
 
-/* .home-page-hero__see_projects_button */
-.home-page-hero__see-projects-button {
-    margin-top: 71px;
-    margin-bottom: 190px;
+@media (width >=$desktopMinWidthSize) {
+    .home-page-hero__subtitle {
+        margin-right: $illustrationIntersection;
+    }
+}
+
+/* .home-page-hero__see-projects-button */
+@media (width >= $desktopMinWidthSize) {
+    .home-page-hero__see-projects-button {
+        margin-top: 71px;
+    }
+}
+
+@media (width < $desktopMinWidthSize) {
+    .home-page-hero__see-projects-button {
+        margin-top: 25px;
+    }
 }
 
 /* .home-page-hero__illustration */
-.home-page-hero__illustration {
-    width: 100%;
-}
-
-@media (width < $rowsHeaderSize) {
+@media (width < $desktopMinWidthSize) {
     .home-page-hero__illustration {
         order: -1;
+
+        width: 100%;
+        max-width: 600px;
+        justify-self: center;
+    }
+}
+
+@media (width >=$desktopMinWidthSize) {
+    .home-page-hero__illustration {
+        width: calc(100% + $illustrationIntersection);
+        margin-left: calc($illustrationIntersection * -1);
     }
 }
