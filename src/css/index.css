@@ -10,6 +10,7 @@
 @import url(blocks/can_help_capability.css);
 @import url(blocks/project.css);
 @import url(blocks/finished_projects.css);
+@import url(blocks/popup_menu.css);
 
 body {
     font-family: 'Gilroy', sans-serif;
