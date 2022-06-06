@@ -6,6 +6,7 @@ $oneColumnCanHelp: 800px;
     padding: 0 10px 0 10px;
 
     width: 100%;
+    box-sizing: content-box;
     max-width: $desktopContentWidth;
 }
 

@@ -18,7 +18,7 @@ $illustrationIntersection: 60px;
         grid-template-columns: auto auto;
 
         max-width: 1130px;
-        margin-left: calc((100% - $desktopMinWidthSize) / 2);
+        margin-left: calc((100% - $desktopContentWidth) / 2);
         margin-right: 25px;
     }
 }
