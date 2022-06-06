@@ -1,0 +1,33 @@
+name: Deploy to server
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Build
+        run: |
+          npm install &&
+          npm run build
+      - name: Install keys
+        run: |
+          mkdir -p "$HOME/.ssh" &&
+          echo "${{ secrets.privkey }}" > "$HOME/.ssh/id_ed25519" &&
+          echo "${{ secrets.hostkey }}" > "$HOME/.ssh/known_hosts" &&
+          chmod 700 "$HOME/.ssh" &&
+          chmod 600 "$HOME/.ssh/id_ed25519"
+      - name: Deploy
+        run: |
+          cd src &&
+          rsync --recursive --no-perms --no-owner --no-group --delete . "${{ secrets.user }}@${{ secrets.host }}:/var/www/mediasoft.liutsko.ru/" &&
+          ssh ${{ secrets.user }}@${{ secrets.host }} "find /var/www/mediasoft.liutsko.ru -type d -exec chmod -v 755 {} \; && find /var/www/mediasoft.liutsko.ru -type f -exec chmod -v 644 {} \;"
