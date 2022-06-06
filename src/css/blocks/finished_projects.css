@@ -67,9 +67,8 @@
 
 @media (width < 925px) {
     .finished-projects__projects {
-        justify-content: center;
-        gap: 50px;
+        row-gap: 50px;
 
-        grid-template-columns: 422px;
+        grid-template-columns: auto;
     }
 }
