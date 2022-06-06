@@ -31,11 +31,6 @@ $illustrationIntersection: 60px;
     }
 }
 
-/* .home-page-hero__text */
-.home-page-hero__text {
-
-}
-
 @media (width >= $desktopMinWidthSize) {
     .home-page-hero__text {
         width: 100%;
