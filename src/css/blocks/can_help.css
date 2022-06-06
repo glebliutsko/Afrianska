@@ -1,4 +1,4 @@
-$oneColumnCanHelp: 750px;
+$oneColumnCanHelp: 800px;
 
 /* .can-help */
 .can-help {
@@ -46,12 +46,14 @@ $oneColumnCanHelp: 750px;
 /* .can-help__capabilities */
 .can-help__capabilities {
     display: grid;
+    margin: auto;
 }
 
 @media (width >=$oneColumnCanHelp) {
     .can-help__capabilities {
-        justify-content: space-evenly;
-        grid-template-columns: auto auto;
+        max-width: 860px;
+        grid-template-columns: 380px 380px;
+        justify-content: space-between;
         row-gap: 100px;
     }
 }
