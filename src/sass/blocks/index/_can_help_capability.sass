@@ -1,0 +1,84 @@
+$paddingCard: 48px
+
+/* .can-help-capability */
+.can-help-capability
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+    border-radius: 10px
+
+    width: 100%
+    max-width: 380px
+    height: 525px
+
+    padding: $paddingCard
+
+
+/* .can-help-capability__image_container */
+.can-help-capability__image_container
+    display: flex
+    justify-content: center
+    align-items: center
+
+    width: calc(100% + $paddingCard * 2)
+    height: calc(180px + $paddingCard)
+    margin-left: -$paddingCard
+    margin-top: -$paddingCard
+
+/* .can-help-capability__image */
+.can-help-capability__image_internet
+    width: 182px
+    height: 132px
+
+    position: relative
+    left: -20.2px
+
+.can-help-capability__image_home
+    width: 224px
+    height: 197px
+
+    position: relative
+    top: -43px
+
+.can-help-capability__image_your-need
+    width: 156px
+    height: 131px
+
+    position: relative
+    left: -23.84px
+
+/* .can-help-capability__header */
+.can-help-capability__header
+    font-size: 20px
+    color: $blueOne
+
+/* .can-help-capability__content */
+.can-help-capability__content
+    margin-top: 16px
+    color: $blueOne
+
+/* .can-help-capability__learn-more */
+.can-help-capability__learn-more
+    display: flex
+    align-items: center
+
+    margin-top: 39px
+
+    text-decoration: none
+    transition: color 0.2s
+    color: $blueFour
+
+
+    &:hover
+        text-decoration: underline
+
+        color: $blueFourHover
+
+    &-text
+        margin-right: 28px
+
+        font-size: 14px
+        letter-spacing: 0.05em
+        font-weight: bold
+
+    &-arrow
+        width: 16px
+        height: 16px

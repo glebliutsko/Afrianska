@@ -4,9 +4,9 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "postcss --verbose src/css/index.css --no-map -u postcss-import -u postcss-simple-vars -u postcss-media-minmax -u postcss-csso --output src/css/index.min.css",
+    "build": "cd src; sass sass:css",
     "startdev": "npm run build -- --watch",
-    "server": "cd src; npx live-server --port=7844 --no-browser"
+    "server": "cd src; npx live-server --port=7844 --no-browser --ignorePattern='^.+\\.(sass|css.map)$'"
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,6 @@
   },
   "homepage": "https://github.com/glebliutsko/MediaSoftPractice#readme",
   "dependencies": {
-    "postcss-cli": "^9.1.0",
-    "postcss-csso": "^6.0.0",
-    "postcss-import": "^14.1.0",
-    "postcss-media-minmax": "^5.0.0",
-    "postcss-simple-vars": "^6.0.3"
+    "sass": "^1.52.2"
   }
 }
