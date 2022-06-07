@@ -1,0 +1,32 @@
+/* .page-title */
+.page-title {
+    background: url('/img/page_title_background.svg');
+    padding: 50px 0;
+}
+
+/* .page-title__body */
+.page-title__body {
+    margin: auto;
+
+    text-align: center;
+    max-width: 780px;
+
+    color: white;
+}
+
+/* .page-title__header */
+.page-title__header {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 74px;
+
+    margin-bottom: 16px;
+}
+
+/* .page-title__description */
+.page-title__description {
+    opacity: 0.4;
+
+    font-size: 20px;
+    line-height: 30px;
+}

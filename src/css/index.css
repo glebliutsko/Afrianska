@@ -6,6 +6,7 @@
 
 @import url(blocks/header.css);
 @import url(blocks/popup_menu.css);
+@import url(blocks/page_title.css);
 
 @import url(blocks/home/hero.css);
 @import url(blocks/home/can_help_capability.css);
@@ -14,7 +15,11 @@
 @import url(blocks/home/finished_projects.css);
 @import url(blocks/home/main.css);
 
+@import url(blocks/blog/article_search.css);
+@import url(blocks/blog/main.css);
+
 body {
     font-family: 'Gilroy', sans-serif;
     font-size: 16px;
+    letter-spacing: 0.04em;
 }
