@@ -17,6 +17,7 @@
 
 @import url(blocks/blog/article_search.css);
 @import url(blocks/blog/article.css);
+@import url(blocks/blog/popular_articles.css);
 @import url(blocks/blog/main.css);
 
 body {

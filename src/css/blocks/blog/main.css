@@ -6,3 +6,12 @@
     margin: auto;    
     margin-top: 56px;
 }
+
+/* .main-blog__popular-articles */
+.main-blog__popular-articles {
+    width: 100%;
+    max-width: 950px;
+    
+    margin: auto;
+    margin-top: 56px;
+}
