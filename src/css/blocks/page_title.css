@@ -1,6 +1,7 @@
 /* .page-title */
 .page-title {
     background: url('/img/page_title_background.svg');
+    background-size: cover;
     padding: 50px 0;
 }
 
