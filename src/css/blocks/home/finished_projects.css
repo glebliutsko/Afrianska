@@ -73,6 +73,12 @@
         width: 100%;
         grid-column: 2 span;
     }
+
+    .project:first-child .project__header_container {
+        width: fit-content;
+        text-align: right;
+        margin: 48px 25px auto auto;
+    }
 }
 
 @media (width < 855px) {
