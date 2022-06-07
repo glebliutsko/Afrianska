@@ -1,10 +1,6 @@
-/* .finished-projects */
-.finished-projects {
-    margin: 192px auto 0 auto;
-    padding: 0 10px;
-
-    box-sizing: content-box;
-    max-width: $desktopContentWidth;
+/* finished-projects__body */
+.finished-projects__body {
+    margin: 0 10px;
 }
 
 /* .finished-projects__header-conteiner */
@@ -57,6 +53,18 @@
         grid-template-columns: auto auto;
     }
 
+    .finished-projects__project {
+        width: 422px;
+    }
+
+    .finished-projects__project:first-child {
+        width: 100%;
+        grid-column: 2 span;
+    }
+}
+
+/* .finished-projects__project */
+@media (width >= 855px) {
     .finished-projects__project {
         width: 422px;
     }

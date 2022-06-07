@@ -12,6 +12,7 @@
 @import url(blocks/home/can_help.css);
 @import url(blocks/home/project.css);
 @import url(blocks/home/finished_projects.css);
+@import url(blocks/home/main.css);
 
 body {
     font-family: 'Gilroy', sans-serif;

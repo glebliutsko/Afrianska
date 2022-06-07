@@ -1,24 +1,8 @@
 $oneColumnCanHelp: 800px;
 
-/* .can-help */
-.can-help {
-    margin: auto;
-    padding: 0 10px 0 10px;
-
-    box-sizing: content-box;
-    max-width: $desktopContentWidth;
-}
-
-@media (width >=$oneColumnCanHelp) {
-    .can-help {
-        margin-top: 192px;
-    }
-}
-
-@media (width < $oneColumnCanHelp) {
-    .can-help {
-        margin-top: 50px;
-    }
+/* .can-help__body */
+.can-help__body {
+    margin: 10px;
 }
 
 /* .can-help__header */
