@@ -1,0 +1,30 @@
+$headerHeight: 128px
+$sizeIcon: 48px
+    
+/* .header */
+.header
+    position: fixed
+    z-index: 1
+
+    width: 100%
+    padding: calc(($headerHeight - 48px) / 2) 0px
+    height: $headerHeight
+
+    background-color: white
+
+.main_header_padding
+    padding-top: $headerHeight
+
+.header__content
+    display: flex
+    justify-content: space-between
+
+    height: 100%
+    margin: 0 83px
+
+.header__icon
+    width: $sizeIcon
+    height: $sizeIcon
+
+.header__burger-button
+    @extend %without-style-button

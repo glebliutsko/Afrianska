@@ -1,0 +1,47 @@
+.finished-projects
+    @include fit-parent-center-width(950px)
+    
+.finished-projects__body
+    margin: 0 10px
+
+.finished-projects__header
+    font-size: 36px
+    color: $headerColor
+
+    letter-spacing: 0.05em
+
+.finished-projects__sub-header
+    font-size: 16px
+    color: $lightBlueTextColor
+
+@media (min-width: 881px)
+    .finished-projects__header-conteiner
+        display: flex
+        justify-content: flex-start
+        margin-bottom: 96px
+
+    .finished-projects__header
+        width: 230px
+        margin-right: 93px
+
+    .finished-projects__projects
+        display: grid
+        row-gap: 89px
+        justify-content: space-between
+        grid-template-columns: 422px 422px
+
+    .finished-projects__project
+        &:first-child
+            width: 100%
+            grid-column: 2 span
+
+@media (max-width: 880px)
+    .finished-projects__header-conteiner
+        margin-bottom: 25px
+
+    .finished-projects__header
+        text-align: center
+        margin-bottom: 25px
+
+    .finished-projects__project
+        @include margin-list-element(50px)

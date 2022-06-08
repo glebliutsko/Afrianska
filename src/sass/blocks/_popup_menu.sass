@@ -1,0 +1,45 @@
+.popup-menu
+    position: fixed
+    top: 0
+    left: 0
+
+    height: 100%
+    width: 100%
+
+    z-index: 100
+
+.popup-menu__grey-overlay
+    position: absolute
+
+    top: 0
+    left: 0
+
+    height: 100%
+    width: 100%
+
+    background-color: #00000033
+    opacity: 0
+
+    transition: all 0.3s
+
+    .popup-menu_enable &
+        opacity: 1
+
+.popup-menu__navigation
+    position: absolute
+
+    max-width: 400px
+    width: 85%
+    height: 100%
+
+    top: 0
+    right: 0
+
+    transform: translateX(400px)
+    transition: all 0.3s
+
+    border-radius: 50px 0 0 0
+    background: $popupMenuBackground
+
+    .popup-menu_enable &
+        transform: translateX(0)

@@ -1,0 +1,13 @@
+$gilroy-dir: '/fonts/Galien'
+@mixin galien-font($fontTypeName, $fontWeight, $fontStyle)
+    font-family: 'Galien'
+    src: local('Galien #{$fontTypeName}'), local('Galien-#{$fontTypeName}')
+    src: url('#{$gilroy-dir}/Galien-#{$fontTypeName}.woff') format('woff')
+    font-weight: $fontWeight
+    font-style: $fontStyle
+    
+@font-face
+    @include galien-font('Regular', normal, normal)
+
+@font-face
+    @include galien-font('Bold', bold, normal)

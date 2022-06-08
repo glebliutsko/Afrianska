@@ -1,0 +1,76 @@
+.project
+    position: relative
+
+    width: 100%
+    height: 417px
+    transition: 0.2s
+
+    overflow: hidden
+    border-radius: 10px
+
+    cursor: pointer
+
+.project__header_container
+    margin: 24px 24px auto 32px
+    color: white
+
+@mixin project__background($isBottom: false, $width: 100%, $height: 100%)
+    position: absolute
+    @if $width != none
+        width: $width
+    @if  $height != none
+        height: $height
+
+    left: 0
+    @if $isBottom
+        bottom: 0
+    @else
+        top: 0
+
+.project__background
+    @include project__background
+    z-index: -1
+
+.project__background-image
+    @include project__background
+
+    object-fit: cover
+    transition: transform 0.2s
+
+    .project:hover &
+        transform: scale(110%)
+
+.project__background-gradient
+    @include project__background
+    background: $projectGradient
+
+.project__background-image-overlay
+    @include project__background(true, 90%, none)
+    max-width: 380px
+
+.project__header
+    font-size: 28px
+    line-height: 46px
+    font-weight: normal
+
+    .project:hover &
+        text-decoration: underline
+
+.project__sub-header
+    line-height: 46px
+    margin-top: 4px
+
+// Style text right
+@mixin project_text-right()
+    & .project__header_container
+        width: fit-content
+        text-align: right
+        margin: 48px 25px auto auto
+
+@media (min-width: 550px)
+    .project_text-right-up550
+        @include project_text-right
+
+@media (min-width: 550px) and (max-width: 880px)
+    .project_text-right-up550-down880
+        @include project_text-right

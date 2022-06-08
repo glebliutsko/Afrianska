@@ -1,0 +1,115 @@
+// Base style
+.blog-article__image
+    object-fit: cover
+
+.blog-article__header
+    font-family: 'Galien'
+    color: $headerColor
+
+.blog-article__link
+    text-decoration: none
+
+.blog-article__summary
+    line-height: 26px
+    color: $greyTextColor
+
+.blog-article__information-and-action
+    display: flex
+
+    justify-content: space-between
+    align-items: center
+
+    widows: 100%
+    max-width: 300px
+
+.blog-article__information
+    font-size: 14px
+    line-height: 24px
+
+.blog-article__author
+    color: $headerColor
+    margin-bottom: 4px
+
+.blog-article__date-publish
+    color: $greyTextColor
+
+.blog-article__action-button
+    @extend %without-style-button
+    width: 18px
+    height: 22px
+
+    &:last-child
+        margin-left: 38px
+
+.blog-article__action-icon
+    width: 100%
+    height: 100%
+
+// Style normal
+@mixin blog-article_normal()
+    &.blog-article
+        display: flex
+    
+    & .blog-article__image
+        width: 300px
+        margin-right: 20px
+
+    & .blog-article__wrapper
+        display: grid
+        grid-template-rows: auto auto auto
+        row-gap: 16px
+    
+    & .blog-article__header
+        font-size: 28px
+        line-height: 38px
+
+// Style small
+@mixin blog-article_small()
+    & .blog-article__header
+        font-size: 28px
+        line-height: 38px
+        margin-bottom: 16px
+    
+    & .blog-article__image
+        width: 100%
+
+    & .blog-article__summary
+        margin-bottom: 16px
+
+// Style big
+@mixin blog-article_big()
+    &.blog-article
+        display: flex
+    
+    & .blog-article__image
+        width: 540px
+        order: 1
+
+    & .blog-article__wrapper
+        display: grid
+        grid-template-rows: auto auto auto
+        row-gap: 30px
+
+        margin-right: 20px
+    
+    & .blog-article__summary
+        min-height: 150px
+    
+    & .blog-article__header
+        font-size: 48px
+        line-height: 58px
+    
+@media (min-width: 940px)
+    .blog-article_big-width-up940
+        @include blog-article_big
+    
+    .blog-article_small-width-up940
+        @include blog-article_small
+
+@media (max-width: 939px) and (min-width: 700px)
+    .blog-article_normal-width-up700-down939
+        @include blog-article_normal
+
+@media (max-width: 699px)
+    .blog-article_small-width-down699
+        @include blog-article_small
