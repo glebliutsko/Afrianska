@@ -14,18 +14,25 @@
     margin: 24px 24px auto 32px
     color: white
 
-.project__background
+@mixin project__background($isBottom: false, $width: 100%, $height: 100%)
     position: absolute
-    width: 100%
-    height: 100%
+    @if $width != none
+        width: $width
+    @if  $height != none
+        height: $height
 
-    top: 0
     left: 0
+    @if $isBottom
+        bottom: 0
+    @else
+        top: 0
+
+.project__background
+    @include project__background
+    z-index: -1
 
 .project__background-image
-    position: absolute
-    width: 100%
-    height: 100%
+    @include project__background
 
     object-fit: cover
     transition: transform 0.2s
@@ -34,26 +41,17 @@
         transform: scale(110%)
 
 .project__background-gradient
-    position: absolute
-    width: 100%
-    height: 100%
-
+    @include project__background
     background: $projectGradient
 
 .project__background-image-overlay
-    position: absolute
-
-    bottom: 0
-    left: 0
-
+    @include project__background(true, 90%, none)
     max-width: 380px
-    width: 90%
 
 .project__header
     font-size: 28px
     line-height: 46px
     font-weight: normal
-
 
     .project:hover &
         text-decoration: underline

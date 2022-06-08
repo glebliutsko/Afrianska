@@ -20,9 +20,9 @@
         justify-content: space-between
         row-gap: 100px
 
-    .can-help__capability:first-child
-        grid-row: span 2
-        align-self: center
+        &:first-child
+            grid-row: span 2
+            align-self: center
 
 @media (max-width: 800px)
     .can-help__header
@@ -33,7 +33,4 @@
         @include fit-parent-center-width(380px)
     
     .can-help__capability
-        margin-bottom: 50px
-
-        &:last-child
-            margin-bottom: 0px
+        @include margin-list-element(50px)
