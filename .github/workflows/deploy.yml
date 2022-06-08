@@ -28,6 +28,6 @@ jobs:
           chmod 600 "$HOME/.ssh/id_ed25519"
       - name: Deploy
         run: |
-          cd src &&
+          cd dist &&
           rsync --recursive --no-perms --no-owner --no-group --delete . "${{ secrets.user }}@${{ secrets.host }}:/var/www/mediasoft.liutsko.ru/" &&
           ssh ${{ secrets.user }}@${{ secrets.host }} "find /var/www/mediasoft.liutsko.ru -type d -exec chmod -v 755 {} \; && find /var/www/mediasoft.liutsko.ru -type f -exec chmod -v 644 {} \;"
