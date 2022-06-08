@@ -1,0 +1,7 @@
+@mixin fit-parent-center
+    width: 100%
+    margin: auto
+
+@mixin fit-parent-center-width($maxWidth)
+    @include fit-parent-center
+    max-width: $maxWidth
