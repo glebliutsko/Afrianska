@@ -1,8 +1,7 @@
-/* .popular-articles__body */
-.popular-articles__body
-    margin: 0 10px
-
-/* .popular-articles__header */
+.popular-articles
+    @include fit-parent-center-width(950px)
+    padding: 0 10px
+    
 .popular-articles__header
     text-transform: uppercase
     font-size: 20px
@@ -10,15 +9,18 @@
 
     margin-bottom: 32px
 
-    color: $blueThree
+    color: $headerBlogColor
 
-/* .popular-articles__articles */
-.popular-articles__articles
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    row-gap: 33px
-    column-gap: 20px
+@media (min-width: 940px)
+    .popular-articles__articles
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        row-gap: 33px
+        column-gap: 20px
 
-/* .popular-articles__article */
-.popular-articles__article:first-child
-    grid-column: span 3
+    .popular-articles__article:first-child
+        grid-column: span 3
+
+@media (max-width: 939px)
+    .popular-articles__article
+        @include margin-list-element(32px)

@@ -2,35 +2,11 @@ $illustrationIntersection: 60px
 
 .home-page-hero
     padding: 0 0 60px 0
-
     background: $headerGradient
 
 .home-page-hero__body
     display: grid
 
-@media (min-width: 950px)
-    .home-page-hero__body
-        align-items: center
-        grid-template-columns: auto auto
-
-        max-width: 1130px
-        margin-left: calc((100% - 940px) / 2)
-        margin-right: 25px
-
-@media (max-width: 950px)
-    .home-page-hero__body
-        margin: 0 10px 0 10px
-        justify-content: center
-        grid-row: auto auto
-
-@media (min-width: 950px)
-    .home-page-hero__text
-        width: 100%
-        max-width: 530px
-
-        position: relative
-
-/* .home-page-hero__title */
 .home-page-hero__title
     font-family: 'Galien', serif
     font-size: 64px
@@ -40,7 +16,6 @@ $illustrationIntersection: 60px
 
     color: $headerColor
 
-/* .home-page-hero__subtitle */
 .home-page-hero__subtitle
     margin-top: 32px
     letter-spacing: 0.05em
@@ -48,28 +23,38 @@ $illustrationIntersection: 60px
 
     color: $lightBlueTextColor
 
-@media (min-width: 950px)
+@media (min-width: 950px + 1)
+    .home-page-hero__body
+        grid-template-columns: auto auto
+
+        max-width: 1130px
+        margin-left: calc((100% - 940px) / 2)
+        margin-right: 25px
+
+    .home-page-hero__text
+        width: 100%
+        max-width: 530px
+        margin: auto
+
     .home-page-hero__subtitle
         margin-right: $illustrationIntersection
 
-@media (min-width: 950px)
     .home-page-hero__see-projects-button
         margin-top: 71px
 
-@media (max-width: 950px)
-    .home-page-hero__see-projects-button
-        margin-top: 25px
-
-/* .home-page-hero__illustration */
-@media (max-width: 950px)
-    .home-page-hero__illustration
-        order: -1
-
-        width: 100%
-        max-width: 600px
-        justify-self: center
-
-@media (min-width: 950px)
     .home-page-hero__illustration
         width: calc(100% + $illustrationIntersection)
         margin-left: calc($illustrationIntersection * -1)
+
+@media (max-width: 950px)
+    .home-page-hero__body
+        margin: 0 10px 0 10px
+        justify-content: center
+        grid-row: auto auto
+
+    .home-page-hero__see-projects-button
+        margin-top: 25px
+
+    .home-page-hero__illustration
+        @include fit-parent-center-width(600px)
+        order: -1

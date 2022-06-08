@@ -59,3 +59,18 @@
 .project__sub-header
     line-height: 46px
     margin-top: 4px
+
+// Style text right
+@mixin project_text-right()
+    & .project__header_container
+        width: fit-content
+        text-align: right
+        margin: 48px 25px auto auto
+
+@media (min-width: 550px)
+    .project_text-right-up550
+        @include project_text-right
+
+@media (min-width: 550px) and (max-width: 880px)
+    .project_text-right-up550-down880
+        @include project_text-right

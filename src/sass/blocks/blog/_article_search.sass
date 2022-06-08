@@ -1,22 +1,29 @@
-/* .article-search__body */
+.article-search
+    @include fit-parent-center-width(950px)
+    
 .article-search__body
+    $paddingTopBottom: 19px
+    $paddingLeftRight: 27px
     display: flex
     align-items: center
 
     border-radius: 10px
     background: #f4f4f4
 
-    padding: 19px 27px
+    padding: $paddingTopBottom $paddingLeftRight
     margin: 0 10px
 
-/* .article-search__icon */
+    &:focus-within
+        $borderThickness: 1px
+        padding: $paddingTopBottom - $borderThickness $paddingLeftRight - $borderThickness
+        border: solid $inputOutlineFocusColor $borderThickness
+
 .article-search__icon
     width: 24px
     height: 24px
 
     margin-right: 24px
 
-/* .article-search__input */
 .article-search__input
     width: 100%
 

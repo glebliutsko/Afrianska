@@ -9,16 +9,6 @@ $paddingCard: 48px
     padding: $paddingCard
 
 .can-help-capability__image_container
-    @mixin position-image($width, $height, $top, $rigth, $bottom, $left)
-        width: $width
-        height: $height
-
-        position: relative
-        top: $top
-        right: $rigth
-        bottom: $bottom
-        left: $left
-
     display: flex
     justify-content: center
     align-items: center
@@ -28,14 +18,29 @@ $paddingCard: 48px
     margin-left: -$paddingCard
     margin-top: -$paddingCard
 
+.can-help-capability__image
+    @mixin position-image($width, $height, $top: unset, $rigth: unset, $bottom: unset, $left: unset)
+        width: $width
+        height: $height
+
+        position: relative
+        @if $top != unset
+            top: $top
+        @if $rigth != unset
+            right: $rigth
+        @if $bottom != unset            
+            bottom: $bottom
+        @if $left != unset
+            left: $left
+
     &_internet
-        @include position-image(182px, 132px, initial, initial, initial, -20.2px)
+        @include position-image(182px, 132px, $left: -20.2px)
 
     &_home
-        @include position-image(224px, 197px, -43px, initial, initial, initial)
+        @include position-image(224px, 197px, $top: -43px)
 
     &_your-need
-        @include position-image(224px, 197px, initual, initial, initial, -23.84px)
+        @include position-image(224px, 197px, $left: -23.84px)
 
 .can-help-capability__header
     font-size: 20px

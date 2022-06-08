@@ -1,3 +1,6 @@
+.finished-projects
+    @include fit-parent-center-width(950px)
+    
 .finished-projects__body
     margin: 0 10px
 
@@ -11,10 +14,11 @@
     font-size: 16px
     color: $lightBlueTextColor
 
-@media (min-width: 855px)
+@media (min-width: 881px)
     .finished-projects__header-conteiner
         display: flex
         justify-content: flex-start
+        margin-bottom: 96px
 
     .finished-projects__header
         width: 230px
@@ -24,21 +28,14 @@
         display: grid
         row-gap: 89px
         justify-content: space-between
-        grid-template-columns: auto auto
+        grid-template-columns: 422px 422px
 
     .finished-projects__project
-        width: 422px
-
         &:first-child
             width: 100%
             grid-column: 2 span
 
-            & .project__header_container
-                width: fit-content
-                text-align: right
-                margin: 48px 25px auto auto
-
-@media (max-width: 855px + 1px)
+@media (max-width: 880px)
     .finished-projects__header-conteiner
         margin-bottom: 25px
 

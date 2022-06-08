@@ -1,3 +1,6 @@
+.can-help
+    @include fit-parent-center-width(950px)
+        
 .can-help__body
     margin: 10px
 
@@ -20,7 +23,7 @@
         justify-content: space-between
         row-gap: 100px
 
-        &:first-child
+    .can-help-capability:first-child
             grid-row: span 2
             align-self: center
 
@@ -30,7 +33,7 @@
         margin-bottom: 50px
 
     .can-help__capabilities
-        @include fit-parent-center-width(380px)
+        @include fit-parent-center-width(420px)
     
     .can-help__capability
         @include margin-list-element(50px)
