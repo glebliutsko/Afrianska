@@ -5,6 +5,7 @@ const cssnano = require('gulp-cssnano');
 const del = require('del');
 const htmlmin = require('gulp-htmlmin');
 const browserSync = require("browser-sync").create();
+const gzip = require('gulp-gzip');
 
 
 function cleanTask() {
@@ -69,6 +70,17 @@ function imagesTask() {
         .pipe(dest('dist/img'));
 }
 
+function gzipTask() {
+    return src('dist/**/*.{js,css,html,svg}')
+        .pipe(gzip({
+            append: true,
+            gzipOptions: {
+                level: 9
+            }
+        }))
+        .pipe(dest('dist'));
+}
+
 function watchTask() {
     browserSync.init({
         server: {
@@ -98,7 +110,7 @@ exports.default = series(
     watchTask
 );
 
-exports.build = series(
+let releaseBuild = series(
     cleanTask,
     parallel(
         sassReleaseTask,
@@ -108,3 +120,5 @@ exports.build = series(
         imagesTask
     )
 );
+exports.build = releaseBuild;
+exports.buildGzip = series(releaseBuild, gzipTask);

@@ -18,7 +18,7 @@ jobs:
       - name: Build
         run: |
           npm install &&
-          npm run build
+          npm run build:gzip
       - name: Install keys
         run: |
           mkdir -p "$HOME/.ssh" &&
