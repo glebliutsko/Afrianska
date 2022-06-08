@@ -1,0 +1,67 @@
+$gilroy-dir: '/fonts/Gilroy'
+@mixin gilroy-font($fontTypeName, $fontWeight, $fontStyle)
+    font-family: 'Gilroy'
+    src: local('Gilroy #{$fontTypeName}'), local('Gilroy-#{$fontTypeName}')
+    src: url('#{$gilroy-dir}/Gilroy-#{$fontTypeName}.woff') format('woff')
+    font-weight: $fontWeight
+    font-style: $fontStyle
+    
+@font-face
+    @include gilroy-font('ExtraBold', 800, normal)
+
+@font-face
+    @include gilroy-font('Heavy', 900, normal)
+
+@font-face
+    @include gilroy-font('LightItalic', 300, italic)
+
+@font-face
+    @include gilroy-font('ThinItalic', 100, italic)
+
+@font-face
+    @include gilroy-font('BlackItalic', 900, italic)
+
+@font-face
+    @include gilroy-font('BoldItalic', bold, italic)
+
+@font-face
+    @include gilroy-font('SemiBold', 600, normal)
+
+@font-face
+    @include gilroy-font('UltraLightItalic', 200, italic)
+
+@font-face
+    @include gilroy-font('SemiBoldItalic', 600, italic)
+
+@font-face
+    @include gilroy-font('Light', 300, normal)
+
+@font-face
+    @include gilroy-font('MediumItalic', 500, italic)
+
+@font-face
+    @include gilroy-font('ExtraBoldItalic', 800, italic)
+
+@font-face
+    @include gilroy-font('Regular', normal, normal)
+
+@font-face
+    @include gilroy-font('HeavyItalic', 900, italic)
+
+@font-face
+    @include gilroy-font('Medium', 500, normal)
+
+@font-face
+    @include gilroy-font('RegularItalic', normal, italic)
+
+@font-face
+    @include gilroy-font('UltraLight', 200, normal)
+
+@font-face
+    @include gilroy-font('Bold', bold, normal)
+
+@font-face
+    @include gilroy-font('Thin', 100, normal)
+
+@font-face
+    @include gilroy-font('Black', 900, normal)
