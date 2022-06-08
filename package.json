@@ -4,9 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "cd src; sass sass:css",
-    "startdev": "npm run build -- --watch",
-    "server": "cd src; npx live-server --port=7844 --no-browser --ignorePattern='^.+\\.(sass|css.map)$'"
+    "build": "gulp build",
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",
