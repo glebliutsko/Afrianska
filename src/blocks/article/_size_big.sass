@@ -1,0 +1,21 @@
+@mixin blog-article_big()
+    &.blog-article
+        display: flex
+    
+    & .blog-article__image
+        width: 540px
+        order: 1
+
+    & .blog-article__wrapper
+        display: grid
+        grid-template-rows: auto auto auto
+        row-gap: 30px
+
+        margin-right: 20px
+    
+    & .blog-article__summary
+        min-height: 150px
+    
+    & .blog-article__header
+        font-size: 48px
+        line-height: 58px
