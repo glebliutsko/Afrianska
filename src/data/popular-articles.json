@@ -1,7 +1,7 @@
 [
     {
         "title": "Popular",
-        "classes": "group-articles_layout_grid",
+        "classes": "page-section__content group-articles_layout_grid",
         "links": [
             {
                 "body": "<span>See All Popular Article</span>",

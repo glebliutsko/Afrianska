@@ -1,7 +1,7 @@
 [
     {
         "title": "All Article",
-        "classes": "",
+        "classes": "page-section__content",
         "links": [
             {
                 "body": "<img style=\"transform: scale(-1);\" src=\"/img/icons/arrow.svg\"><span>Old Post</span>",
