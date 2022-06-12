@@ -17,17 +17,11 @@
     @@include('../blocks/header/main.html', {"classes": ""})
 
     <main class="main main_header_padding main-blog">
-        <section class="page-title main-blog__title">
-            <div class="page-title__body">
-                <h1 class="page-title__header">
-                    Blog Afrianska
-                </h1>
-                <div class="page-title__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </div>
-            </div>
-        </section>
+        @@include('../blocks/page-title/main.html', {
+            "classes": "",
+            "title": "Blog Afrianska",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        })
 
         <section class="article-search main-blog__article-search">
             <div class="article-search__body">
