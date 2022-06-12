@@ -34,26 +34,7 @@
             <hr class="separator">
         </div>
 
-        <section class="group-articles main-blog__all-articles">
-            <div class="group-articles__body">
-                <h2 class="group-articles__header">
-                    All Article
-                </h2>
-                <div class="group-articles__articles">
-                    
-                </div>
-                <div class="group-articles__links group-articles__links_multiple">
-                    <a class="group-articles__link" href="#">
-                        <img src="/img/icons/arrow.svg" style="transform: scale(-1);">
-                        <span>New Post</span>
-                    </a>
-                    <a class="group-articles__link" href="#">
-                        <span>Old Post</span>
-                        <img src="/img/icons/arrow.svg">
-                    </a>
-                </div>
-            </div>
-        </section>
+        @@loop('../blocks/group-articles/main.html', '../data/all-articles.json')
     </main>
 
     <footer class="footer main-blog__footer">
