@@ -30,9 +30,9 @@
 
         @@loop('../blocks/group-articles/main.html', '../data/popular-articles.json')
 
-        <div class="section-separator">
-            <hr class="separator">
-        </div>
+        @@include('../blocks/separator/main.html', {
+            "classes": ""
+        })
 
         @@loop('../blocks/group-articles/main.html', '../data/all-articles.json')
     </main>
