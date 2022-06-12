@@ -1,4 +1,4 @@
-@mixin blog-article_big()
+@mixin blog-article_size_big()
     &.blog-article
         display: flex
     
@@ -19,3 +19,7 @@
     & .blog-article__header
         font-size: 48px
         line-height: 58px
+
+@media (min-width: 940px)
+    .blog-article_size_big_up940
+        @include blog-article_size_big

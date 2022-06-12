@@ -10,14 +10,14 @@
     </div>
 
     @@if (links.length === 1) {
-        <div class="group-articles__links group-articles__links_single">
+        <div class="group-articles__links">
             @@for (var i = 0; i < links.length; i++) {
                 <a class="group-articles__link" href="`+links[i].href+`">`+links[i].body+`</a>
             }
         </div>
     }
     @@if (links.length === 2) {
-        <div class="group-articles__links group-articles__links_multiple">
+        <div class="group-articles__links group-articles__links_count_multiple">
             @@for (var i = 0; i < links.length; i++) {
                 <a class="group-articles__link" href="`+links[i].href+`">`+links[i].body+`</a>
             }

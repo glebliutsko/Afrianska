@@ -1,20 +1,16 @@
 [
     {
         "title": "Popular",
-        "classes": "group-articles__article",
+        "classes": "group-articles_layout_grid",
         "links": [
             {
                 "body": "<span>See All Popular Article</span>",
                 "href": "#"
-            },
-            {
-                "body": "<span>See All Popular Article</span>",
-                "href": "#sss"
             }
         ],
         "articles": [
             {
-                "classes": "group-articles__article",
+                "classes": "group-articles__article blog-article_size_big_up940 article_size_normal_up700_down939",
                 "title": "Feugiat sodales at nullam tellus.",
                 "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum.",
                 "author": "Samatha Leuthex",
@@ -26,7 +22,7 @@
                 }
             },
             {
-                "classes": "group-articles__article",
+                "classes": "group-articles__article article_size_normal_up700_down939",
                 "title": "Porta proin tellus sed pulvinar odio eu pulvinar.",
                 "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 "author": "Samatha Leuthex",
@@ -38,7 +34,7 @@
                 }
             },
             {
-                "classes": "group-articles__article",
+                "classes": "group-articles__article article_size_normal_up700_down939",
                 "title": "Non quam tortor, proin eu egestas scelerisque purus.",
                 "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 "author": "Samatha Leuthex",
@@ -50,7 +46,7 @@
                 }
             },
             {
-                "classes": "group-articles__article",
+                "classes": "group-articles__article article_size_normal_up700_down939",
                 "title": "Amet amet sed pharetra risus sit eget interdum.",
                 "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 "author": "Samatha Leuthex",
