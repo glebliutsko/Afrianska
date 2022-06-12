@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "gulp build",
-    "build:gzip": "gulp buildGzip",
+    "gzip": "find ./dist -type f -regextype egrep -regex '.+\\.(html|css|js|svg|woff)' -exec gzip -f -v -k -9 {} \\;",
     "dev": "gulp"
   },
   "repository": {
@@ -23,7 +23,6 @@
     "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.3",
-    "gulp-gzip": "^1.4.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",

@@ -6,7 +6,6 @@ const { htmlDevTask, htmlReleaseTask } = require('./gulp/tasks/html');
 const { fontsTask } = require('./gulp/tasks/fonts');
 const { scriptsTask } = require('./gulp/tasks/scripts');
 const { imagesTask } = require('./gulp/tasks/images');
-const { gzipTask } = require('./gulp/tasks/gzip');
 const { watchTask } = require('./gulp/tasks/watch');
 
 exports.clean = cleanTask;
@@ -34,6 +33,4 @@ let releaseBuild = series(
 );
 
 exports.default = series(devBuild, watchTask);
-
 exports.build = releaseBuild;
-exports.buildGzip = series(releaseBuild, gzipTask);

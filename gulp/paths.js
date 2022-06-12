@@ -10,11 +10,6 @@ exports.paths = {
         dist: outputdir
     },
 
-    gzip: {
-        src: `${outputdir}/**/*.{js,css,html,svg}`,
-        dist: outputdir
-    },
-
     html: {
         src: `${srcdir}/**/*.html`,
         dist: outputdir
