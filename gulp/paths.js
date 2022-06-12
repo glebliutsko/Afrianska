@@ -17,7 +17,8 @@ exports.paths = {
         watch: [
             `${srcdir}/pages/**/*.html`,
             `${srcdir}/blocks/**/*.html`,
-            `${srcdir}/html-templates/**/*.html`
+            `${srcdir}/html-templates/**/*.html`,
+            `${srcdir}/data/**/*.json`
         ]
     },
 
