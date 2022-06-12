@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
     const buttonOpen = document.querySelector('.header__burger-button');

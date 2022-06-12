@@ -1,16 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" type="image/svg+xml" href="/img/logo/logo.svg">
-    <link rel="stylesheet" href="/css/blog.css">
-
-    <title>Blog</title>
-
-    <script src="/js/menu.js"></script>
+    @@include('../html-templates/head.html', {"title": "Blog"})
 </head>
 
 <body>
@@ -22,17 +14,7 @@
         </nav>
     </div>
 
-    <header class="header">
-        <div class="header__content">
-            <a class="header__link" href="/">
-                <img class="header__icon" src="/img/logo/logo.svg">
-            </a>
-
-            <button class="header__burger-button">
-                <img class="header__icon" src="/img/icons/burger_menu_control.svg">
-            </button>
-        </div>
-    </header>
+    @@include('../blocks/header/main.html', {"classes": ""})
 
     <main class="main main_header_padding main-blog">
         <section class="page-title main-blog__title">
