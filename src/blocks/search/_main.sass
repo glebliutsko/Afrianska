@@ -1,7 +1,4 @@
-.article-search
-    @include fit-parent-center-width(950px)
-    
-.article-search__body
+.search
     $paddingTopBottom: 19px
     $paddingLeftRight: 27px
     display: flex
@@ -11,23 +8,22 @@
     background: #f4f4f4
 
     padding: $paddingTopBottom $paddingLeftRight
-    margin: 0 10px
 
     &:focus-within
         $borderThickness: 1px
         padding: $paddingTopBottom - $borderThickness $paddingLeftRight - $borderThickness
         border: solid $inputOutlineFocusColor $borderThickness
 
-.article-search__icon
+.search__icon
     width: 24px
     height: 24px
 
-    margin-right: 24px
-
-.article-search__input
+.search__input
     width: 100%
 
     font-size: 16px
+
+    margin-left: 24px
 
     outline: none
     border: none

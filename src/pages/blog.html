@@ -23,12 +23,10 @@
             "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         })
 
-        <section class="article-search main-blog__article-search">
-            <div class="article-search__body">
-                <img class="article-search__icon" src="/img/icons/search.svg" alt="">
-                <input class="article-search__input" type="text" placeholder="Search Article">
-            </div>
-        </section>
+        @@include('../blocks/search/main.html', {
+            "classes": "",
+            "placeholder": "Search Artcile"
+        })
 
         <section class="group-articles group-articles_grid main-blog__popular-articles">
             <div class="group-articles__body">
