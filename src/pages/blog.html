@@ -28,66 +28,7 @@
             "placeholder": "Search Artcile"
         })
 
-        <section class="group-articles group-articles_grid main-blog__popular-articles">
-            <div class="group-articles__body">
-                <h2 class="group-articles__header">
-                    Popular
-                </h2>
-                <div class="group-articles__articles">
-                    @@include('../blocks/article/main.html', {
-                        "classes": "group-articles__article",
-                        "title": "Feugiat sodales at nullam tellus.",
-                        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum.",
-                        "author": "Samatha Leuthex",
-                        "date": "May 5",
-                        "reading-time": "3 min read",
-                        "image": {
-                            "src": "/img/blog_article/1.png",
-                            "alt": "Какой-то дом с басейном"
-                        }
-                    })
-                    @@include('../blocks/article/main.html', {
-                        "classes": "group-articles__article",
-                        "title": "Porta proin tellus sed pulvinar odio eu pulvinar.",
-                        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                        "author": "Samatha Leuthex",
-                        "date": "May 5",
-                        "reading-time": "3 min read",
-                        "image": {
-                            "src": "/img/blog_article/2.png",
-                            "alt": "Тетради и ручки"
-                        }
-                    })
-                    @@include('../blocks/article/main.html', {
-                        "classes": "group-articles__article",
-                        "title": "Non quam tortor, proin eu egestas scelerisque purus.",
-                        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                        "author": "Samatha Leuthex",
-                        "date": "May 5",
-                        "reading-time": "3 min read",
-                        "image": {
-                            "src": "/img/blog_article/3.png",
-                            "alt": "Храм или что-то типо того"
-                        }
-                    })
-                    @@include('../blocks/article/main.html', {
-                        "classes": "group-articles__article",
-                        "title": "Amet amet sed pharetra risus sit eget interdum.",
-                        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                        "author": "Samatha Leuthex",
-                        "date": "May 5",
-                        "reading-time": "3 min read",
-                        "image": {
-                            "src": "/img/blog_article/4.png",
-                            "alt": "Macbook"
-                        }
-                    })
-                </div>
-                <div class="group-articles__links group-articles__links_single">
-                    <a class="group-articles__link" href="#">See All Popular Article</a>
-                </div>
-            </div>
-        </section>
+        @@loop('../blocks/group-articles/main.html', '../data/popular-articles.json')
 
         <div class="section-separator">
             <hr class="separator">

@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Popular",
+        "classes": "group-articles__article",
+        "links": [
+            {
+                "body": "<span>See All Popular Article</span>",
+                "href": "#"
+            },
+            {
+                "body": "<span>See All Popular Article</span>",
+                "href": "#sss"
+            }
+        ],
+        "articles": [
+            {
+                "classes": "group-articles__article",
+                "title": "Feugiat sodales at nullam tellus.",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum.",
+                "author": "Samatha Leuthex",
+                "date": "May 5",
+                "reading-time": "3 min read",
+                "image": {
+                    "src": "/img/blog_article/1.png",
+                    "alt": "Какой-то дом с басейном"
+                }
+            },
+            {
+                "classes": "group-articles__article",
+                "title": "Porta proin tellus sed pulvinar odio eu pulvinar.",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "author": "Samatha Leuthex",
+                "date": "May 5",
+                "reading-time": "3 min read",
+                "image": {
+                    "src": "/img/blog_article/2.png",
+                    "alt": "Тетради и ручки"
+                }
+            },
+            {
+                "classes": "group-articles__article",
+                "title": "Non quam tortor, proin eu egestas scelerisque purus.",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "author": "Samatha Leuthex",
+                "date": "May 5",
+                "reading-time": "3 min read",
+                "image": {
+                    "src": "/img/blog_article/3.png",
+                    "alt": "Храм или что-то типо того"
+                }
+            },
+            {
+                "classes": "group-articles__article",
+                "title": "Amet amet sed pharetra risus sit eget interdum.",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "author": "Samatha Leuthex",
+                "date": "May 5",
+                "reading-time": "3 min read",
+                "image": {
+                    "src": "/img/blog_article/4.png",
+                    "alt": "Macbook"
+                }
+            }
+        ]
+    }
+]

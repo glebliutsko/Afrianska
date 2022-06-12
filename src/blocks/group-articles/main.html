@@ -1,0 +1,26 @@
+<!-- Лучше бы я переписал все на pug, чем писал ВОТ ЭТО. -->
+<section class="group-articles @@classes">
+    <h2 class="group-articles__header">
+        @@title
+    </h2>
+    <div class="group-articles__articles">        
+        @@for (var i = 0; i < articles.length; i++) {
+            @@include('../article/main.html', `+JSON.stringify(articles[i])+`)
+        }
+    </div>
+
+    @@if (links.length === 1) {
+        <div class="group-articles__links group-articles__links_single">
+            @@for (var i = 0; i < links.length; i++) {
+                <a class="group-articles__link" href="`+links[i].href+`">`+links[i].body+`</a>
+            }
+        </div>
+    }
+    @@if (links.length === 2) {
+        <div class="group-articles__links group-articles__links_multiple">
+            @@for (var i = 0; i < links.length; i++) {
+                <a class="group-articles__link" href="`+links[i].href+`">`+links[i].body+`</a>
+            }
+        </div>
+    }
+</section>
