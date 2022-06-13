@@ -25,24 +25,24 @@
             })
         </section>
 
-        <section class="page-section page-body__section">
+        <section class="page-body__section page-body__section_width-limit">
             @@include('../blocks/search/main.html', {
                 "classes": "page-section__content",
                 "placeholder": "Search Artcile"
             })
         </section>
 
-        <section class="page-section page-body__section">
+        <section class="page-body__section page-body__section_width-limit">
             @@loop('../blocks/group-articles/main.html', '../data/popular-articles.json')
         </section>
 
-        <section class="page-section page-body__section">
+        <section class="page-body__section page-body__section_width-limit">
             @@include('../blocks/separator/main.html', {
                 "classes": "page-section__content"
             })
         </section>
 
-        <section class="page-section page-body__section">
+        <section class="page-body__section page-body__section_width-limit">
             @@loop('../blocks/group-articles/main.html', '../data/all-articles.json')
         </section>
     </main>
