@@ -1,0 +1,13 @@
+.company-information
+    @media (min-width: 860px)
+        display: flex
+        justify-content: space-between
+
+.company-information__logo
+    margin-bottom: 32px
+
+.company-information__short-information, .company-information__about-us, .company-information__follow-us
+    max-width: 270px
+
+    @media (max-width: 859px)
+        @include margin-list-element(24px)

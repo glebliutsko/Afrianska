@@ -1,0 +1,68 @@
+<div class="company-information @@classes">
+    <div class="company-information__short-information">
+        @@include('../full-logo/main.html', {
+            "classes": "company-information__logo"
+        })
+        @@include('../list-various-marker/main.html', {
+            "classes": "company-information__contacts",
+            "elements": [
+                {
+                    "marker": "A.",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                },
+                {
+                    "marker": "T.",
+                    "text": "+62-812-7313-4321"
+                },
+                {
+                    "marker": "E.",
+                    "text": "hello.afrian@gmail.com"
+                }
+            ]
+        })
+    </div>
+    @@include('../titled-links-list/main.html', {
+        "classes": "company-information__about-us",
+        "title": "About US",
+        "links": [
+            {
+                "text": "About",
+                "href": "#"
+            },
+            {
+                "text": "What We Do",
+                "href": "#"
+            },
+            {
+                "text": "Project",
+                "href": "#"
+            },
+            {
+                "text": "How It Work With Us",
+                "href": "#"
+            }
+        ]
+    })
+    @@include('../titled-links-list/main.html', {
+        "classes": "company-information__follow-us",
+        "title": "Follow US",
+        "links": [
+            {
+                "text": "Instagram",
+                "href": "https://www.instagram.com/"
+            },
+            {
+                "text": "Facebook",
+                "href": "https://ru-ru.facebook.com/"
+            },
+            {
+                "text": "LinkedIn",
+                "href": "https://ru.linkedin.com"
+            },
+            {
+                "text": "Youtube",
+                "href": "https://www.youtube.com/"
+            }
+        ]
+    })
+</div>

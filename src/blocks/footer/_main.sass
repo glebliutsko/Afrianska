@@ -1,50 +1,45 @@
 .footer
     color: white
     background: $footerBackgroundColor
+
     padding-bottom: 64px
 
     @media (min-width: 860px)
         padding-top: 90px
         margin-right: 96px
         border-radius: 0 200px 0 0
-
+    
     @media (max-width: 859px)
         padding-top: 20px
 
-.footer__work-with-our-team-header
-    font-size: 36px
-    line-height: 46px
+.footer__section
+    max-width: 950px
+    padding: 0 10px
 
-    @media (min-width: 860px)
-        max-width: 317px
+    @media (min-width: 950px)
+        margin-left: $sizeOneMarginPage
 
-.footer__work-with-our-team-information
-    color: rgba(255, 255, 255, 0.6)
-    line-height: 26px
+.footer__work-with-our-team
+    & .title-with-button__title
+        @media (min-width: 860px)
+            max-width: 320px
 
-    @media (min-width: 860px)
-        max-width: 460px
-
-.footer__button-talk
-    @media (min-width: 860px)
-        align-self: center
-        grid-column: 2
-        grid-row: 1 / -1
+    & .title-with-button__summary
+         @media (min-width: 860px)
+            max-width: 460px
+    
+    & .title-with-button__button
+        width: 220px
 
 .footer__separator
-    margin-top: 96px
-    margin-bottom: 96px
-    margin-left: -50%
-    max-width: calc(860px + 50%)
+    margin: 96px 0
+    width: calc(940px + $sizeOneMarginPage)
 
-.footer__information-container
-    @media (min-width: 860px)
-        display: flex
-        justify-content: space-between
-        max-width: 700px
+.footer__company-information
+    margin-bottom: 64px
 
-.footer__logo
-    margin-bottom: 32px
+    @media (min-width: 860px) // Выравнивание по кнопке "Let's Talk"
+        margin-right: calc(220px - 95px)
 
-.footer__copyright
-    margin-top: 64px
+        & .company-information__follow-us
+            width: 95px

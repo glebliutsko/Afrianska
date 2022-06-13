@@ -1,85 +1,25 @@
 <@@element class="footer @@classes">
-    <div class="footer__container">
+    <section class="footer__section">
         @@include('../title-with-button/main.html', {
-            "classes": "title-with-button_column",
+            "classes": "title-with-button_column footer__work-with-our-team",
             "header-element": "h3",
-            "title": "Intersted to woek with our team?",
+            "title": "Intersted to work with our team?",
             "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
             "button-text": "Let`s Talk"
         })
-    </div>
+    </section>
+    
     <hr class="separator separator_color_white footer__separator">
-    <div class="footer__container">
-        <div class="footer__information-container">
-            <div class="footer__contacts">
-                @@include('../full-logo/main.html', {
-                    "classes": "footer__logo"
-                })
-                @@include('../list-various-marker/main.html', {
-                    "classes": "footer__contacts",
-                    "elements": [
-                        {
-                            "marker": "A.",
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-                        },
-                        {
-                            "marker": "T.",
-                            "text": "+62-812-7313-4321"
-                        },
-                        {
-                            "marker": "E.",
-                            "text": "hello.afrian@gmail.com"
-                        }
-                    ]
-                })
-            </div>
-            @@include('../titled-links-list/main.html', {
-                "classes": "footer__about-us",
-                "title": "About US",
-                "links": [
-                    {
-                        "text": "About",
-                        "href": "#"
-                    },
-                    {
-                        "text": "What We Do",
-                        "href": "#"
-                    },
-                    {
-                        "text": "Project",
-                        "href": "#"
-                    },
-                    {
-                        "text": "How It Work With Us",
-                        "href": "#"
-                    }
-                ]
-            })
-            @@include('../titled-links-list/main.html', {
-                "classes": "footer__follow-us",
-                "title": "Follow US",
-                "links": [
-                    {
-                        "text": "Instagram",
-                        "href": "https://www.instagram.com/"
-                    },
-                    {
-                        "text": "Facebook",
-                        "href": "https://ru-ru.facebook.com/"
-                    },
-                    {
-                        "text": "LinkedIn",
-                        "href": "https://ru.linkedin.com"
-                    },
-                    {
-                        "text": "Youtube",
-                        "href": "https://www.youtube.com/"
-                    }
-                ]
-            })
-        </div>
+
+    <section class="footer__section">
+        @@include('../company-information/main.html', {
+            "classes": "footer__company-information"
+        })
+    </section>
+
+    <section class="footer__section">
         @@include('../copyright/main.html', {
             "classes": "footer__copyright"
         })
-    </div>
+    </section>
 </@@element>
