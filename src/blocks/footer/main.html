@@ -21,14 +21,26 @@
                 @@include('../full-logo/main.html', {
                     "classes": "footer__logo"
                 })
-                <ul class="footer__contact-details">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                    <li>+62-812-7313-4321</li>
-                    <li>hello.afrian@gmail.com</li>
-                </ul>
+                @@include('../list-various-marker/main.html', {
+                    "classes": "footer__contacts",
+                    "elements": [
+                        {
+                            "marker": "A.",
+                            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                        },
+                        {
+                            "marker": "T.",
+                            "text": "+62-812-7313-4321"
+                        },
+                        {
+                            "marker": "E.",
+                            "text": "hello.afrian@gmail.com"
+                        }
+                    ]
+                })
             </div>
             @@include('../titled-links-list/main.html', {
-                "classes": "",
+                "classes": "footer__about-us",
                 "title": "About US",
                 "links": [
                     {
@@ -50,8 +62,8 @@
                 ]
             })
             @@include('../titled-links-list/main.html', {
-                "classes": "",
-                "title": "About US",
+                "classes": "footer__follow-us",
+                "title": "Follow US",
                 "links": [
                     {
                         "text": "Instagram",
