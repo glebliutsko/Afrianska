@@ -4,11 +4,11 @@
         "classes": "page-section__content",
         "links": [
             {
-                "body": "<img style=\"transform: scale(-1);\" src=\"/img/icons/arrow.svg\"><span>Old Post</span>",
+                "body": "<img style=\"transform: scale(-1);\" src=\"/img/icons/arrow.svg\"><span>New Post</span>",
                 "href": "#"
             },
             {
-                "body": "<span>New Post</span><img src=\"/img/icons/arrow.svg\">",
+                "body": "<span>Old Post</span><img src=\"/img/icons/arrow.svg\">",
                 "href": "#"
             }
         ],
