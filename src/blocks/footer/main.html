@@ -27,60 +27,50 @@
                     <li>hello.afrian@gmail.com</li>
                 </ul>
             </div>
-            <div class="footer__list-link-container">
-                <h5 class="footer__list-link-header">
-                    About US
-                </h5>
-                <ul class="footer__list-link">
-                    <li class="footer__list-link-elem">
-                        <a class="footer__link" href="#">
-                            About
-                        </a>
-                    </li>
-                    <li class="footer__list-link-elem">
-                        <a class="footer__link" href="#">
-                            What We Do
-                        </a>
-                    </li>
-                    <li class="footer__list-link-elem">
-                        <a class="footer__link" href="#">
-                            Project
-                        </a>
-                    </li>
-                    <li class="footer__list-link-elem">
-                        <a class="footer__link" href="#">
-                            How It Work With Us
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__list-link-container">
-                <h5 class="footer__list-link-header">
-                    Follow US
-                </h5>
-                <ul class="footer__list-link">
-                    <li class="footer__list-link-elem">
-                        <a class="footer__link" href="#">
-                            Instagram
-                        </a>
-                    </li>
-                    <li class="footer__list-link-elem">
-                        <a class="footer__link" href="#">
-                            Facebook
-                        </a>
-                    </li>
-                    <li class="footer__list-link-elem">
-                        <a class="footer__link" href="#">
-                            LinkedIn
-                        </a>
-                    </li>
-                    <li class="footer__list-link-elem">
-                        <a class="footer__link" href="#">
-                            Youtube
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            @@include('../titled-links-list/main.html', {
+                "classes": "",
+                "title": "About US",
+                "links": [
+                    {
+                        "text": "About",
+                        "href": "#"
+                    },
+                    {
+                        "text": "What We Do",
+                        "href": "#"
+                    },
+                    {
+                        "text": "Project",
+                        "href": "#"
+                    },
+                    {
+                        "text": "How It Work With Us",
+                        "href": "#"
+                    }
+                ]
+            })
+            @@include('../titled-links-list/main.html', {
+                "classes": "",
+                "title": "About US",
+                "links": [
+                    {
+                        "text": "Instagram",
+                        "href": "https://www.instagram.com/"
+                    },
+                    {
+                        "text": "Facebook",
+                        "href": "https://ru-ru.facebook.com/"
+                    },
+                    {
+                        "text": "LinkedIn",
+                        "href": "https://ru.linkedin.com"
+                    },
+                    {
+                        "text": "Youtube",
+                        "href": "https://www.youtube.com/"
+                    }
+                ]
+            })
         </div>
         <div class="footer__copyright">
             2019 © Afrianska. All rights reserved.
