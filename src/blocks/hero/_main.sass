@@ -1,0 +1,40 @@
+$illustrationIntersection: 60px
+
+.hero
+    padding-right: 10px
+    padding-bottom: 60px
+    background: $headerGradient
+
+    @media (min-width: 961px)
+        padding-left: $sizeOneMarginPageWithoutPadding
+    @media (max-width: 960px)
+        padding-left: 10px
+
+.hero__wrapper
+    width: 100%
+    max-width: 1130px
+
+    @media (min-width: 901px)
+        display: grid
+        grid-template-columns: 9fr 11fr
+
+.hero__text
+    & .title-with-button__title
+        font-family: 'Galien', serif
+        font-size: 64px
+        line-height: 74px
+
+        color: $headerColor
+    
+    @media (min-width: 901px)
+
+        & .title-with-button__summary
+            margin-right: $illustrationIntersection
+
+.hero__illustration
+    width: 100%
+
+    @media (min-width: 901px)
+        order: 2
+        width: calc(100% + $illustrationIntersection)
+        margin-left: calc($illustrationIntersection * -1)
