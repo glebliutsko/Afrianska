@@ -19,30 +19,30 @@
     <main class="page-body__main">
         <section class="page-body__section">
             @@include('../blocks/page-title/main.html', {
-                "classes": "page-section__content",
+                "classes": "",
                 "title": "Blog Afrianska",
                 "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             })
         </section>
 
-        <section class="page-section page-section_not-full-width page-body__section">
+        <section class="page-section page-body__section">
             @@include('../blocks/search/main.html', {
                 "classes": "page-section__content",
                 "placeholder": "Search Artcile"
             })
         </section>
 
-        <section class="page-section page-section_not-full-width page-body__section">
+        <section class="page-section page-body__section">
             @@loop('../blocks/group-articles/main.html', '../data/popular-articles.json')
         </section>
 
-        <section class="page-section page-section_not-full-width page-body__section">
+        <section class="page-section page-body__section">
             @@include('../blocks/separator/main.html', {
                 "classes": "page-section__content"
             })
         </section>
 
-        <section class="page-section page-section_not-full-width page-body__section">
+        <section class="page-section page-body__section">
             @@loop('../blocks/group-articles/main.html', '../data/all-articles.json')
         </section>
     </main>
