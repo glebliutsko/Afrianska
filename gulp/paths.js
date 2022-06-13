@@ -7,7 +7,7 @@ exports.paths = {
 
     fonts: {
         src: `${srcdir}/fonts/**/*`,
-        dist: outputdir,
+        dist: `${outputdir}/fonts/`,
         watch: `${srcdir}/fonts/**/*`
     },
 
