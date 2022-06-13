@@ -1,18 +1,12 @@
 <@@element class="footer @@classes">
     <div class="footer__container">
-        <div class="footer__work-with-our-team-conteiner">
-            <h3 class="footer__work-with-our-team-header">
-                Intersted to woek with our team?
-            </h3>
-            <div class="footer__work-with-our-team-information">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam.
-            </div>
-            @@include('../button/main.html', {
-                "classes": "footer__button-talk",
-                "text": "Let`s Talk"
-            })
-        </div>
+        @@include('../title-with-button/main.html', {
+            "classes": "title-with-button_column",
+            "header-element": "h3",
+            "title": "Intersted to woek with our team?",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "button-text": "Let`s Talk"
+        })
     </div>
     <hr class="separator separator_color_white footer__separator">
     <div class="footer__container">

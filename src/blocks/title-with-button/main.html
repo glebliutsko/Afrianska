@@ -1,0 +1,12 @@
+<div class="title-with-button @@classes">
+    <@@header-element class="title-with-button__title">
+        @@title
+    </@@header-element>
+    <div class="title-with-button__summary">
+        @@summary
+    </div>
+    @@include('../button/main.html', {
+        "classes": "title-with-button__button",
+        "text": "@@button-text"
+    })
+</div>
