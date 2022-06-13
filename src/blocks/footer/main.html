@@ -17,12 +17,9 @@
     <div class="footer__container">
         <div class="footer__information-container">
             <div class="footer__contacts">
-                <div class="footer__company">
-                    <img class="footer__logo" src="/img/logo/logo-light.svg">
-                    <span class="footer__company-name">
-                        Afrianska
-                    </span>
-                </div>
+                @@include('../full-logo/main.html', {
+                    "classes": "footer__logo"
+                })
                 <ul class="footer__contact-details">
                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     <li>+62-812-7313-4321</li>
