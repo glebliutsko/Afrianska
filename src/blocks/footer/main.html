@@ -8,9 +8,10 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam.
             </div>
-            <button class="footer__work-with-our-team-button blue_button">
-                Let`s Talk
-            </button>
+            @@include('../button/main.html', {
+                "classes": "footer__button-talk",
+                "text": "Let`s Talk"
+            })
         </div>
     </div>
     <hr class="separator separator_white footer__separator">
