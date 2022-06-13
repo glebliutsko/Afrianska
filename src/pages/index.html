@@ -2,21 +2,21 @@
 <html lang="ru">
 
 <head>
-    @@include('../html-templates/head.html', {"title": "Home"})
+    @@include('../html-templates/head.html', {
+        "title": "Home"
+    })
 </head>
 
-<body>
-    <div class="popup-menu" style="display: none;">
-        <div class="popup-menu__grey-overlay"></div>
+<body class="page-body">
+    @@include('../blocks/popup-menu/main.html', {
+        "classes": "page-body__popup-menu"
+    })
 
-        <nav class="popup-menu__navigation">
+    @@include('../blocks/header/main.html', {
+        "classes": "page-body__header"
+    })
 
-        </nav>
-    </div>
-
-    @@include('../blocks/header/main.html', {"classes": ""})
-
-    <main class="main main_header_padding main_home">
+    <main class="page-body__main">
         <section class="home-page-hero main-home__section">
             <div class="home-page-hero__body">
                 <div class="home-page-hero__text">
