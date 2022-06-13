@@ -5,12 +5,17 @@
     @@include('../html-templates/head.html', {"title": "Blog"})
 </head>
 
-<body>
-    @@include('../blocks/popup-menu/main.html', {"classes": ""})
-    @@include('../blocks/header/main.html', {"classes": ""})
+<body class="page-body page-body_section-margin_56 page-body_footer-margin_96">
+    @@include('../blocks/popup-menu/main.html', {
+        "classes": "page-body__popup-menu"
+    })
 
-    <main class="main">
-        <section class="page-section page-section_margin">
+    @@include('../blocks/header/main.html', {
+        "classes": "page-body__header"
+    })
+
+    <main class="page-body__main">
+        <section class="page-body__section">
             @@include('../blocks/page-title/main.html', {
                 "classes": "page-section__content",
                 "title": "Blog Afrianska",
@@ -18,30 +23,30 @@
             })
         </section>
 
-        <section class="page-section page-section_not-full-width page-section_margin">
+        <section class="page-section page-section_not-full-width page-body__section">
             @@include('../blocks/search/main.html', {
                 "classes": "page-section__content",
                 "placeholder": "Search Artcile"
             })
         </section>
 
-        <section class="page-section page-section_not-full-width page-section_margin">
+        <section class="page-section page-section_not-full-width page-body__section">
             @@loop('../blocks/group-articles/main.html', '../data/popular-articles.json')
         </section>
 
-        <section class="page-section page-section_not-full-width page-section_margin">
+        <section class="page-section page-section_not-full-width page-body__section">
             @@include('../blocks/separator/main.html', {
                 "classes": "page-section__content"
             })
         </section>
 
-        <section class="page-section page-section_not-full-width page-section_margin">
+        <section class="page-section page-section_not-full-width page-body__section">
             @@loop('../blocks/group-articles/main.html', '../data/all-articles.json')
         </section>
     </main>
 
     @@include('../blocks/footer/main.html', {
-        "classes": "",
+        "classes": "page-body__footer",
         "element": "footer"
     })
 </body>
