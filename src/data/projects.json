@@ -1,0 +1,26 @@
+[
+    {
+        "classes": "card-background-image_text-right_up650 projects__card",
+        "href": "#",
+        "title": "Smart Home Installation",
+        "summary": "In Muarakana Housing Estate",
+        "image-background-src": "/img/project/1.png",
+        "image_background_overlay": "/img/project/1.1.svg"
+    },
+    {
+        "classes": "card-background-image_text-right_up650_down870 projects__card",
+        "href": "#",
+        "title": "Sparklite App",
+        "summary": "Marketplace",
+        "image-background-src": "/img/project/2.png",
+        "image_background_overlay": false
+    },
+    {
+        "classes": "card-background-image_text-right_up650_down870 projects__card",
+        "href": "#",
+        "title": "Car-Rapetition App",
+        "summary": "Board",
+        "image-background-src": "/img/project/3.png",
+        "image_background_overlay": false
+    }
+]

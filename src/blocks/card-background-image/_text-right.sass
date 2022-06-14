@@ -1,0 +1,12 @@
+@mixin card-background-image_text-right()
+    & .card-background-image__content
+        text-align: right
+        margin: 48px 48px auto auto
+
+@media (min-width: 651px)
+    .card-background-image_text-right_up650
+        @include card-background-image_text-right
+    
+@media (max-width: 870px) and (min-width: 651px)
+    .card-background-image_text-right_up650_down870
+        @include card-background-image_text-right

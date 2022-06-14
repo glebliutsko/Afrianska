@@ -1,0 +1,18 @@
+<a class="card-background-image @@classes" href="@@href">
+    <div class="card-background-image__content">
+        <h3 class="card-background-image__header">
+            @@title
+        </h3>
+        <div class="card-background-image__summary">
+            @@summary
+        </div>
+    </div>
+
+    <div class="card-background-image__background" aria-hidden="true">
+        <img class="card-background-image__background-image" src="@@image-background-src">
+        <div class="card-background-image__background-gradient"></div>
+        @@if (image_background_overlay !== false) {
+            <img class="card-background-image__background-image-overlay" src="@@image_background_overlay">
+        }
+    </div>
+</a>

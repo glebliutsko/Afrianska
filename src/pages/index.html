@@ -31,67 +31,11 @@
         </section>
 
         <section class="page-body__section page-body__section_width-limit">
-            <div class="finished-projects__body">
-                <div class="finished-projects__header-conteiner">
-                    <h2 class="finished-projects__header">
-                        Our&nbsp;Finished Project
-                    </h2>
-                    <div class="finished-projects__sub-header">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </div>
-                </div>
-                <div class="finished-projects__projects">
-                    <div class="project project_text-right-up550 finished-projects__project">
-                        <div class="project__header_container">
-                            <h3 class="project__header">
-                                Smart Home Installation
-                            </h3>
-                            <div class="project__sub-header">
-                                In Muarakana Housing Estate
-                            </div>
-                        </div>
-
-                        <div class="project__background" aria-hidden="true">
-                            <img class="project__background-image" src="/img/project/1.png">
-                            <div class="project__background-gradient"></div>
-                            <img class="project__background-image-overlay" src="/img/project/1.1.svg">
-                        </div>
-                    </div>
-
-                    <div class="project project_text-right-up550-down880 finished-projects__project">
-                        <div class="project__header_container">
-                            <h3 class="project__header">
-                                Sparklite App
-                            </h3>
-                            <div class="project__sub-header">
-                                Marketplace
-                            </div>
-                        </div>
-
-                        <div class="project__background" aria-hidden="true">
-                            <img class="project__background-image" src="/img/project/2.png">
-                            <div class="project__background-gradient"></div>
-                        </div>
-                    </div>
-
-                    <div class="project project_text-right-up550-down880 finished-projects__project">
-                        <div class="project__header_container">
-                            <h3 class="project__header">
-                                Car-Rapetition App
-                            </h3>
-                            <div class="project__sub-header">
-                                Board
-                            </div>
-                        </div>
-
-                        <div class="project__background" aria-hidden="true">
-                            <img class="project__background-image" src="/img/project/3.png">
-                            <div class="project__background-gradient"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @@include('../blocks/projects/main.html', {
+                "classes": "",
+                "title": "Our&nbsp;Finished Project",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            })
         </section>
     </main>
 

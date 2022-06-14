@@ -1,0 +1,20 @@
+.projects__header
+    margin-bottom: 96px
+
+    & .title-with-summary__summary
+        max-width: 540px
+
+.projects__cards
+    @media (min-width: 871px)
+        display: grid
+        grid-template-columns: 420px 420px
+        justify-content: space-between
+        row-gap: 96px
+
+.projects__card
+    &:first-child
+        @media (min-width: 871px)
+            grid-column: span 2
+    
+    @media (max-width: 870px)
+        @include margin-list-element(50px)

@@ -1,0 +1,12 @@
+<div class="projects @@classes">
+    @@include('../title-with-summary/main.html', {
+        "classes": "projects__header",
+        "header-element": "h2",
+        "title": "@@title",
+        "summary": "@@summary"
+    })
+
+    <div class="projects__cards">
+        @@loop('../card-background-image/main.html', '../data/projects.json')
+    </div>
+</div>
