@@ -1,0 +1,17 @@
+<div class="grid-view-with-separator__item">
+    @@if (link === true) {
+        <a class="grid-view-with-separator__link" href="@@href">
+    }
+
+    @@if (type === 'text') {
+        <span class="grid-view-with-separator__item-content grid-view-with-separator__item-content_type_text">@@text</span>
+    }
+    
+    @@if (type === 'image') {
+        <img class="grid-view-with-separator__item-content grid-view-with-separator__item-content_type_image" src="@@src" class="mainfooter__client-logo-img">
+    }
+
+    @@if (link === true) {
+        </a>
+    }
+</div>

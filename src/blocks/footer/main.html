@@ -1,0 +1,25 @@
+<@@element class="footer @@classes">
+    <section class="footer__section">
+        @@include('../title-with-button/main.html', {
+            "classes": "title-with-button_column footer__work-with-our-team",
+            "header-element": "h3",
+            "title": "Intersted to work with our team?",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "button-text": "Let`s Talk"
+        })
+    </section>
+    
+    <hr class="separator separator_color_white footer__separator">
+
+    <section class="footer__section">
+        @@include('../company-information/main.html', {
+            "classes": "footer__company-information"
+        })
+    </section>
+
+    <section class="footer__section">
+        @@include('../copyright/main.html', {
+            "classes": "footer__copyright"
+        })
+    </section>
+</@@element>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('../html-templates/head.html', {
+        "title": "Home"
+    })
+</head>
+
+<body class="page-body page-body_section-margin_192 page-body_footer-margin_192">
+    @@include('../blocks/popup-menu/main.html', {
+        "classes": "page-body__popup-menu"
+    })
+
+    @@include('../blocks/header/main.html', {
+        "classes": "page-body__header"
+    })
+
+    <main class="page-body__main">
+        <section class="page-body__section">
+            @@include('../blocks/hero/main.html', {
+                "classes": ""
+            })
+        </section>
+
+        <section class="page-body__section page-body__section_width-limit">
+            @@include('../blocks/what-can-help/main.html', {
+                "classes": "",
+                "title": "What we do to help our client grow in digital era,"
+            })
+        </section>
+
+        <section class="page-body__section page-body__section_width-limit">
+            @@include('../blocks/projects/main.html', {
+                "classes": "",
+                "title": "Our&nbsp;Finished Project",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            })
+        </section>
+    </main>
+
+    @@include('../blocks/footer-big/main.html', {
+        "classes": "page-body__footer"
+    })
+</body>
+
+</html>

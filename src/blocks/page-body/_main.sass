@@ -1,0 +1,31 @@
+.page-body
+    font-family: 'Gilroy', sans-serif
+    font-size: 16px
+    letter-spacing: 0.04em
+
+.page-body__header
+    z-index: 1
+    position: fixed
+
+.page-body__main
+    padding-top: 128px
+
+.page-body__section_width-limit
+    @include fit-parent-center-width(960px)
+    padding: 0 10px
+
+.page-body_section-margin_56
+    & .page-body__section
+        @include margin-list-element(56px)
+
+.page-body_section-margin_192
+    & .page-body__section
+        @include margin-list-element(192px)
+
+.page-body_footer-margin_96
+    & .page-body__footer
+        margin-top: 96px
+
+.page-body_footer-margin_192
+    & .page-body__footer
+        margin-top: 192px

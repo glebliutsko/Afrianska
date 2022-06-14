@@ -1,0 +1,62 @@
+<div class="our-clients @@classes">
+    @@include('../title-with-summary/main.html', {
+        "classes": "our-clients__title",
+        "header-element": "h2",
+        "title": "@@title",
+        "summary": "@@summary"
+    })
+
+    @@include('../grid-view-with-separator/main.html', {
+        "classes": "grid-view-with-separator_list-background-dark our-clients__logos",
+        "items": [
+            {
+                "link": true,
+                "href": "https://www.digitalocean.com/",
+                "type": "image",
+                "src": "/img/clients/digitalocean.png",
+            },
+            {
+                "link": true,
+                "href": "https://github.com/",
+                "type": "image",
+                "src": "/img/clients/github.png",
+            },
+            {
+                "link": true,
+                "href": "https://www.google.ru/",
+                "type": "image",
+                "src": "/img/clients/google.png",
+            },
+            {
+                "link": true,
+                "href": "https://vk.com/",
+                "type": "image",
+                "src": "/img/clients/vk.png",
+            },
+            {
+                "link": true,
+                "href": "https://www.microsoft.com/",
+                "type": "image",
+                "src": "/img/clients/microsoft.png",
+            },
+            {
+                "link": true,
+                "href": "https://www.mozilla.org/",
+                "type": "image",
+                "src": "/img/clients/mozilla.png",
+            },
+            {
+                "link": true,
+                "href": "https://www.spotify.com/",
+                "type": "image",
+                "src": "/img/clients/spotify.png",
+            },
+            {
+                "link": true,
+                "href": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                "type": "text",
+                "text": "More Client",
+            }
+        ]
+    })
+</div>

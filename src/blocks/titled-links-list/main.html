@@ -1,0 +1,14 @@
+<div class="titled-links-list @@classes">
+    <h5 class="titled-links-list__header">
+        @@title
+    </h5>
+    <ul class="titled-links-list__links-list">
+        @@for (var i = 0; i < links.length; i++) {
+            <li class="titled-links-list__element-list">
+                <a class="titled-links-list__link" href="`+links[i].href+`">
+                    `+links[i].text+`
+                </a>
+            </li>
+        }
+    </ul>
+</div>

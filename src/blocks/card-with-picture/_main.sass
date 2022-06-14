@@ -1,0 +1,27 @@
+$paddingCard: 48px
+
+.card-with-picture
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+    border-radius: 10px
+
+    padding: $paddingCard
+
+.card-with-picture__image-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+
+    // Компенсируем padding для обертки изображения
+    width: calc(100% + $paddingCard * 2)
+    height: calc(180px + $paddingCard)
+    margin-left: -$paddingCard
+    margin-top: -$paddingCard
+
+.card-with-picture__header
+    font-size: 20px
+    margin-bottom: 16px
+    color: $headerColor
+
+.card-with-picture__summary
+    margin-bottom: 32px
+    color: $lightBlueTextColor

@@ -1,0 +1,14 @@
+@mixin fit-parent-center
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+
+@mixin fit-parent-center-width($maxWidth)
+    @include fit-parent-center
+    max-width: $maxWidth
+
+@mixin margin-list-element($marginBottom)
+    margin-bottom: $marginBottom
+
+    &:last-child
+        margin-bottom: 0px

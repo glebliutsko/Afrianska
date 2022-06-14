@@ -1,0 +1,42 @@
+.footer
+    color: white
+    background: $footerBackgroundColor
+
+    padding-bottom: 64px
+
+    @media (min-width: 860px)
+        padding-top: 90px
+        margin-right: 96px
+        border-radius: 0 200px 0 0
+    
+    @media (max-width: 859px)
+        padding-top: 20px
+
+.footer__section
+    max-width: 960px
+    padding: 0 10px
+
+    @media (min-width: 950px)
+        margin-left: $sizeOneMarginPage
+
+.footer__work-with-our-team
+    & .title-with-button__title
+        @media (min-width: 860px)
+            max-width: 320px
+
+    & .title-with-button__summary
+         @media (min-width: 860px)
+            max-width: 460px
+
+.footer__separator
+    margin: 96px 0
+    max-width: calc(940px + $sizeOneMarginPage)
+
+.footer__company-information
+    margin-bottom: 64px
+
+    @media (min-width: 860px) // Выравнивание по кнопке "Let's Talk"
+        margin-right: calc(220px - 95px) // Размер кнопки - Размер списка
+
+        & .company-information__follow-us
+            width: 95px

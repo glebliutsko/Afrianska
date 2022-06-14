@@ -1,0 +1,17 @@
+<div class="card-with-picture @@classes">
+    <div class="card-with-picture__image-wrapper">
+        <img class="card-with-picture__image" src="@@image-src">
+    </div>
+    <h3 class="card-with-picture__header">
+        @@title
+    </h3>
+    <div class="card-with-picture__summary">
+        @@summary
+    </div>
+    @@include('../link-with-icon/main.html', {
+        "classes": "card-with-picture__link",
+        "text": "Learn more",
+        "icon-src": "/img/icons/arrow.svg",
+        "href": "@href"
+    })
+</div>

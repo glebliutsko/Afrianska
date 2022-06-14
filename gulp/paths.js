@@ -7,27 +7,40 @@ exports.paths = {
 
     fonts: {
         src: `${srcdir}/fonts/**/*`,
-        dist: outputdir
+        dist: `${outputdir}/fonts/`,
+        watch: `${srcdir}/fonts/**/*`
     },
 
     html: {
-        src: `${srcdir}/**/*.html`,
-        dist: outputdir
+        src: `${srcdir}/pages/**/*.html`,
+        dist: outputdir,
+        watch: [
+            `${srcdir}/pages/**/*.html`,
+            `${srcdir}/blocks/**/*.html`,
+            `${srcdir}/html-templates/**/*.html`,
+            `${srcdir}/data/**/*.json`
+        ]
     },
 
     images: {
         src: `${srcdir}/img/**/*`,
-        dist: `${outputdir}/img`
+        dist: `${outputdir}/img`,
+        watch: `${srcdir}/img/**/*`
     },
 
     scripts: {
         src: `${srcdir}/js/**/*.js`,
-        dist: `${outputdir}/js`
+        dist: `${outputdir}/js`,
+        watch: `${srcdir}/js/**/*.js`
     },
 
     styles: {
-        src: `${srcdir}/sass/**/*.sass`,
-        dist: `${outputdir}/css`,
-        maps: `./maps`
+        src: `${srcdir}/styles/**/*.sass`,
+        dist: `${outputdir}/styles`,
+        maps: './maps',
+        watch: [
+            `${srcdir}/styles/**/*.sass`,
+            `${srcdir}/blocks/**/*.sass`
+        ]
     }
-}
+};

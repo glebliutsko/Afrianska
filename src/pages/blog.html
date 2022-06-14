@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('../html-templates/head.html', {
+        "title": "Blog"
+    })
+</head>
+
+<body class="page-body page-body_section-margin_56 page-body_footer-margin_96">
+    @@include('../blocks/popup-menu/main.html', {
+        "classes": "page-body__popup-menu"
+    })
+
+    @@include('../blocks/header/main.html', {
+        "classes": "page-body__header"
+    })
+
+    <main class="page-body__main">
+        <section class="page-body__section">
+            @@include('../blocks/page-title/main.html', {
+                "classes": "",
+                "title": "Blog Afrianska",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            })
+        </section>
+
+        <section class="page-body__section page-body__section_width-limit">
+            @@include('../blocks/search/main.html', {
+                "classes": "",
+                "placeholder": "Search Artcile"
+            })
+        </section>
+
+        <section class="page-body__section page-body__section_width-limit">
+            @@loop('../blocks/group-articles/main.html', '../data/popular-articles.json')
+        </section>
+
+        <section class="page-body__section page-body__section_width-limit">
+            @@include('../blocks/separator/main.html', {
+                "classes": ""
+            })
+        </section>
+
+        <section class="page-body__section page-body__section_width-limit">
+            @@loop('../blocks/group-articles/main.html', '../data/all-articles.json')
+        </section>
+    </main>
+
+    @@include('../blocks/footer/main.html', {
+        "classes": "page-body__footer",
+        "element": "footer"
+    })
+</body>
+
+</html>

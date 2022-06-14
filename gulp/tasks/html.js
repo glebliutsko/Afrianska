@@ -2,9 +2,14 @@ const { paths } = require('../paths');
 
 const { src, dest } = require('gulp');
 const htmlmin = require('gulp-htmlmin');
+const fileinclude = require('gulp-file-include');
 
 function htmlTask(isDev) {
-    let t = src(paths.html.src);
+    let t = src(paths.html.src)
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }));
 
     if (!isDev)
         t.pipe(htmlmin({ collapseWhitespace: true }))

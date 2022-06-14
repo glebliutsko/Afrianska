@@ -17,11 +17,11 @@ function watchTask() {
         }
     });
 
-    watch(paths.styles.src, sassDevTask);
-    watch(paths.html.src, htmlDevTask).on('change', browsersync.reload);
-    watch(paths.fonts.src, fontsTask).on('change', browsersync.reload);
-    watch(paths.scripts.src, scriptsTask).on('change', browsersync.reload);
-    watch(paths.images.src, imagesTask).on('change', browsersync.reload);
+    watch(paths.styles.watch, sassDevTask);
+    watch(paths.html.watch, htmlDevTask).on('change', browsersync.reload);
+    watch(paths.fonts.watch, fontsTask).on('change', browsersync.reload);
+    watch(paths.scripts.watch, scriptsTask).on('change', browsersync.reload);
+    watch(paths.images.watch, imagesTask).on('change', browsersync.reload);
 }
 
 exports.watchTask = watchTask;

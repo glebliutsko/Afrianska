@@ -1,0 +1,30 @@
+.search
+    $paddingTopBottom: 19px
+    $paddingLeftRight: 27px
+    display: flex
+    align-items: center
+
+    border-radius: 10px
+    background: #f4f4f4
+
+    padding: $paddingTopBottom $paddingLeftRight
+
+    &:focus-within
+        $borderThickness: 1px
+        padding: $paddingTopBottom - $borderThickness $paddingLeftRight - $borderThickness
+        border: solid $inputOutlineFocusColor $borderThickness
+
+.search__icon
+    width: 24px
+    height: 24px
+
+.search__input
+    width: 100%
+
+    font-size: 16px
+
+    margin-left: 24px
+
+    outline: none
+    border: none
+    background: transparent

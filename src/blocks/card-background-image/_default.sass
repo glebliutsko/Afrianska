@@ -1,0 +1,68 @@
+.card-background-image
+    display: block
+    position: relative
+
+    width: 100%
+    height: 420px
+
+    overflow: hidden
+    border-radius: 10px
+
+    cursor: pointer
+
+    color: inherit
+    text-decoration: inherit
+
+.card-background-image__content
+    width: fit-content
+    margin-top: 24px
+    margin-left: 32px
+
+    color: white
+
+.card-background-image__header
+    font-size: 28px
+    font-weight: bold
+
+    line-height: 46px
+
+    .card-background-image:hover &
+        text-decoration: underline
+
+.card-background-image__summary
+    line-height: 46px
+    margin-top: 4px
+
+@mixin card-background-image__background($isBottom: false, $width: 100%, $height: 100%)
+    position: absolute
+    @if $width != none
+        width: $width
+    @if  $height != none
+        height: $height
+
+    left: 0
+    @if $isBottom
+        bottom: 0
+    @else
+        top: 0
+
+.card-background-image__background
+    @include card-background-image__background
+    z-index: -1
+
+.card-background-image__background-image
+    @include card-background-image__background
+
+    object-fit: cover
+    transition: transform 0.3s
+
+    .card-background-image:hover &
+        transform: scale(120%)
+
+.card-background-image__background-gradient
+    @include card-background-image__background
+    background: $projectGradient
+
+.card-background-image__background-image-overlay
+    @include card-background-image__background(true, 90%, none)
+    max-width: 380px

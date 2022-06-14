@@ -1,0 +1,58 @@
+.what-can-help__header
+    color: $headerLightColor
+    font-size: 35px
+
+    @media (min-width: 801px)
+        position: absolute
+
+        width: 100%
+        max-width: 380px
+    
+    @media (max-width: 801px)
+        text-align: center
+        margin-bottom: 50px
+
+.what-can-help__cards
+    @media (min-width: 801px)
+        display: grid
+        grid-template-columns: 380px 380px
+
+        justify-content: space-between
+        row-gap: 100px
+
+        max-width: 860px
+        margin-left: auto
+
+.what-can-help__card
+    @mixin position-image($width, $height, $top: unset, $rigth: unset, $bottom: unset, $left: unset)
+        width: $width
+        height: $height
+
+        position: relative
+        @if $top != unset
+            top: $top
+        @if $rigth != unset
+            right: $rigth
+        @if $bottom != unset            
+            bottom: $bottom
+        @if $left != unset
+            left: $left
+
+    min-height: 525px
+
+    @media (min-width: 801px)
+        &:first-child
+            grid-row: span 2
+            align-self: center
+
+    @media (max-width: 801px)
+        @include margin-list-element(50px)
+
+    &:nth-child(1) .card-with-picture__image
+        @include position-image(182px, 132px, $left: -20.2px)
+    
+    &:nth-child(2) .card-with-picture__image
+        @include position-image(224px, 197px, $top: -43px)
+
+    &:nth-child(3) .card-with-picture__image
+        @include position-image(156px, 131px, $left: -13.84px)

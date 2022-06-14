@@ -1,0 +1,17 @@
+.footer-big
+    color: white
+    background-color: $footerSecondColor
+
+    @media (min-width: 860px)
+        padding-top: 90px
+        border-radius: 200px 0px 0px 0px
+    
+    @media (max-width: 859px)
+        padding-top: 20px
+
+.footer-big__section
+    @include fit-parent-center-width(960px)
+    padding: 0 10px
+
+    &.footer-big__section_our-clients
+        margin-bottom: 125px

@@ -1,0 +1,13 @@
+.group-articles_layout_grid
+    @media (min-width: 940px)
+        & .group-articles__articles
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            row-gap: 32px
+            column-gap: 20px
+        
+        & .group-articles__article
+            margin-bottom: 0px
+
+        & .group-articles__article:first-child
+            grid-column: span 3

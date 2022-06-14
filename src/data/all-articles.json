@@ -1,0 +1,78 @@
+[
+    {
+        "title": "All Article",
+        "classes": "page-section__content",
+        "links": [
+            {
+                "body": "<img style=\"transform: scale(-1);\" src=\"/img/icons/arrow.svg\"><span>New Post</span>",
+                "href": "#"
+            },
+            {
+                "body": "<span>Old Post</span><img src=\"/img/icons/arrow.svg\">",
+                "href": "#"
+            }
+        ],
+        "articles": [
+            {
+                "classes": "group-articles__article article_size_normal_up700",
+                "title": "Massa eu in laoreet enim augue vulputate nunc.",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.",
+                "author": "Samatha Leuthex",
+                "date": "May 5",
+                "reading-time": "3 min read",
+                "image": {
+                    "src": "/img/blog_article/5.png",
+                    "alt": "Руль автомобиля"
+                }
+            },
+            {
+                "classes": "group-articles__article article_size_normal_up700",
+                "title": "Feugiat a euismod arcu feugiat posuere morbi.",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.",
+                "author": "Samatha Leuthex",
+                "date": "May 5",
+                "reading-time": "3 min read",
+                "image": {
+                    "src": "/img/blog_article/6.png",
+                    "alt": "Цветная стена"
+                }
+            },
+            {
+                "classes": "group-articles__article article_size_normal_up700",
+                "title": "Sociis purus pellentesque faucibus vitae et felis.",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.",
+                "author": "Samatha Leuthex",
+                "date": "May 5",
+                "reading-time": "3 min read",
+                "image": {
+                    "src": "/img/blog_article/7.png",
+                    "alt": "Папоротник"
+                }
+            },
+            {
+                "classes": "group-articles__article article_size_normal_up700",
+                "title": "Cursus feugiat mi pellentesque mauris sed eu.",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.",
+                "author": "Samatha Leuthex",
+                "date": "May 5",
+                "reading-time": "3 min read",
+                "image": {
+                    "src": "/img/blog_article/8.png",
+                    "alt": "Камера (подводная?)."
+                }
+            },
+            {
+                "classes": "group-articles__article article_size_normal_up700",
+                "title": "A morbi arcu curabitur etiam fringilla augue.",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.",
+                "author": "Samatha Leuthex",
+                "date": "May 5",
+                "reading-time": "3 min read",
+                "image": {
+                    "src": "/img/blog_article/9.png",
+                    "alt": "Ноутбук"
+                }
+            }
+        ]
+    }
+]
