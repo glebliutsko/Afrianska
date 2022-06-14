@@ -1,0 +1,23 @@
+[
+    {
+        "classes": "what-can-help__card",
+        "image-src": "/img/capabilities/2.svg",
+        "title": "Make Your business To Be Better Famous In Internet",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "href": "#"
+    },
+    {
+        "classes": "what-can-help__card",
+        "image-src": "/img/capabilities/1.svg",
+        "title": "Bring Technology To Your Comfrotable Home",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "href": "#"
+    },
+    {
+        "classes": "what-can-help__card",
+        "image-src": "/img/capabilities/3.svg",
+        "title": "Build Your Digital Product That Suitable For Your Need",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "href": "#"
+    }
+]
