@@ -14,7 +14,12 @@
     @include fit-parent-center-width(960px)
     padding: 0 10px
 
+// Нельзя было что-ли сделать на макете везде одинаковые отступы!?
 .page-body_section-margin_56
+    & .page-body__section
+        @include margin-list-element(56px)
+
+.page-body_section-margin_96
     & .page-body__section
         @include margin-list-element(56px)
 

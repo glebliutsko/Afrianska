@@ -1,0 +1,17 @@
+<div class="contacts-block__item">
+    @@if (icon !== false) {
+        <img class="contacts-block__item-image" src="@@icon">
+    }
+
+    @@if (href !== false) {
+        <a class="contacts-block__item-link" href="@@href">
+    }
+
+    <span class="contacts-block__item-text">
+        @@text
+    </span>
+
+    @@if (href !== false) {
+        </a>
+    }
+</div>

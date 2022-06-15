@@ -1,0 +1,33 @@
+.contact-us
+    @media (min-width: 961px)
+        display: grid
+
+        grid-template-columns: 300px 540px
+        grid-template-rows: auto fit-content
+
+        justify-content: space-between
+
+.contact-us__illustration
+    display: block
+
+    @media (max-width: 960px)
+        margin: auto
+        margin-bottom: 24px
+
+    @media (min-width: 961px)
+        align-self: center
+
+.contact-us__contacts
+    @media (max-width: 960px)
+        margin-bottom: 24px
+
+.contact-us__message-form
+    @media (min-width: 961px)
+        grid-row: 1 / span 2
+        grid-column: 2
+
+        align-self: center
+
+    @media (max-width: 960px)
+        margin: auto
+        max-width: 540px

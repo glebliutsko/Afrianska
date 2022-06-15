@@ -1,0 +1,45 @@
+[
+    {
+        "classes": "contacts__block",
+        "title": "ADDRESS",
+        "items": [
+            {
+                "icon": false,
+                "href": false,
+                "text": "Id convallis placerat sit sed duis id amet volutpat quam a, pharetra."
+            }
+        ]
+    },
+    {
+        "classes": "contacts__block",
+        "title": "PHONE",
+        "items": [
+            {
+                "icon": "/img/icons/telephone.svg",
+                "href": "tel:+6281273134321",
+                "text": "+62-812-7313-4321"
+            },
+            {
+                "icon": "/img/icons/telephone.svg",
+                "href": "tel:+628170001234",
+                "text": "+62-817-000-1234"
+            }
+        ]
+    },
+    {
+        "classes": "contacts__block",
+        "title": "ONLINE SERVICE",
+        "items": [
+            {
+                "icon": "/img/icons/internet.svg",
+                "href": "http://www.afrianska.com/",
+                "text": "www.afrianska.com"
+            },
+            {
+                "icon": "/img/icons/email.svg",
+                "href": "mailto:hello.afrian@gmail.com",
+                "text": "hello.afrian@gmail.com"
+            }
+        ]
+    }
+]

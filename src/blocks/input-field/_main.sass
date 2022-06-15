@@ -1,0 +1,39 @@
+.input-field
+    display: flex
+    flex-direction: column
+
+    gap: 20px
+
+.input-field__label
+    color: #1F3F68
+
+.input-field__input
+    $paddingTopBottom: 20px
+    $paddingRightLeft: 40px
+
+    padding: $paddingTopBottom $paddingRightLeft
+
+    font-family: 'Gilroy'
+    font-size: 16px
+    line-height: 30px
+
+    outline: none
+
+    border-color: $inputFormBorderColor
+    border-width: 1px
+    border-style: solid
+    border-radius: 10px
+
+    &.input-field__input_type_textarea
+        width: 100%
+        resize: none
+
+    &::placeholder
+        opacity: 0.2
+
+    &:focus
+        padding: $paddingTopBottom - 1 $paddingRightLeft - 1
+        border-width: 2px
+    
+    &:invalid
+        border-color: $inputFornBorderIvalidColor

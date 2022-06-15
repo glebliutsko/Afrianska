@@ -1,0 +1,11 @@
+<label class="input-field @@classes">
+    <span class="input-field__label">@@label</span>
+
+    @@if (type === 'text' || type == 'email') {
+        <input class="input-field__input input-field__input_type_input" type="@@type" placeholder="@@placeholder" name="@@name">
+    }
+
+    @@if (type === 'textarea') {
+        <textarea class="input-field__input input-field__input_type_textarea" placeholder="@@placeholder" name="@@name"></textarea>
+    }
+</label>

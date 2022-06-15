@@ -1,0 +1,36 @@
+<div class="send-message-form @@classes">
+    <h3 class="send-message-form__header">SEND US MESSAGE</h3>
+
+    <form class="send-message-form__form" action="https://httpbin.org/post" method="post" autocomplete="on" enctype="multipart/form-data">
+        <div class="send-message-form__fields">
+            @@loop('../input-field/main.html', [
+                {
+                    "classes": "send-message-form__input-field",
+                    "type": "text",
+                    "label": "Full Name",
+                    "name": "full-name",
+                    "placeholder": "Your Name"
+                },
+                {
+                    "classes": "send-message-form__input-field",
+                    "type": "email",
+                    "label": "Email",
+                    "name": "email",
+                    "placeholder": "Your Email"
+                },
+                {
+                    "classes": "send-message-form__input-field",
+                    "type": "textarea",
+                    "label": "Message",
+                    "name": "message",
+                    "placeholder": "Your Message"
+                }
+            ])
+        </div>
+
+        @@include('../button/main.html', {
+            "classes": "button_shadow send-message-form__button",
+            "text": "SUBMIT"
+        })
+    </form>
+</div>
