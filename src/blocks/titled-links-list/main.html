@@ -1,7 +1,18 @@
+@@if (isdropdown === true) {
+<div class="titled-links-list titled-links-list_drop-down titled-links-list_drop-down_collapsed @@classes">
+}
+@@if (isdropdown === false) {
 <div class="titled-links-list @@classes">
-    <h5 class="titled-links-list__header">
-        @@title
-    </h5>
+}
+    <div class="titled-links-list__header-container">
+        <h5 class="titled-links-list__header">
+            @@title
+        </h5>
+        @@if (isdropdown === true) {
+            <img class="titled-links-list__drop-down-arrow" src="/img/icons/drop-down-list-arrow.svg">
+        }
+    </div>
+
     <ul class="titled-links-list__links-list">
         @@for (var i = 0; i < links.length; i++) {
             <li class="titled-links-list__element-list">

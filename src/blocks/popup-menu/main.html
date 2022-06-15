@@ -1,5 +1,77 @@
 <div class="popup-menu popup-menu_disabled">
     <div class="popup-menu__grey-overlay"></div>
 
-    <nav class="popup-menu__navigation"></nav>
+    <div class="popup-menu__content">
+        <button class="popup-menu__close-button">
+            <img class="popup-menu__close-icon" src="/img/icons/close.svg">
+        </button>
+
+        <nav class="popup-menu__navigation">
+            @@include('../titled-links-list/main.html', {
+                "classes": "popup-menu__navigation-section",
+                "title": "About US",
+                "isdropdown": true,
+                "links": [
+                    {
+                        "text": "About",
+                        "href": "/#hero"
+                    },
+                    {
+                        "text": "What We Do",
+                        "href": "/#what-we-do"
+                    },
+                    {
+                        "text": "Project",
+                        "href": "/#project"
+                    },
+                    {
+                        "text": "How It Work With Us",
+                        "href": "/#clients"
+                    }
+                ]
+            })
+            @@include('../titled-links-list/main.html', {
+                "classes": "popup-menu__navigation-section",
+                "title": "Blog",
+                "isdropdown": true,
+                "links": [
+                    {
+                        "text": "Search",
+                        "href": "/blog.html#article-search"
+                    },
+                    {
+                        "text": "Popular Articles",
+                        "href": "/blog.html#popular-articles"
+                    },
+                    {
+                        "text": "All Articles",
+                        "href": "/blog.html#all-articles"
+                    }
+                ]
+            })
+            @@include('../titled-links-list/main.html', {
+                "classes": "popup-menu__navigation-section",
+                "title": "Follow US",
+                "isdropdown": true,
+                "links": [
+                    {
+                        "text": "Instagram",
+                        "href": "https://www.instagram.com/"
+                    },
+                    {
+                        "text": "Facebook",
+                        "href": "https://ru-ru.facebook.com/"
+                    },
+                    {
+                        "text": "LinkedIn",
+                        "href": "https://ru.linkedin.com"
+                    },
+                    {
+                        "text": "Youtube",
+                        "href": "https://www.youtube.com/"
+                    }
+                ]
+            })
+        </nav>
+    </div>
 </div>

@@ -1,0 +1,34 @@
+.titled-links-list__header-container
+    margin-bottom: 16px
+
+    display: flex
+    align-items: center
+    gap: 15px
+
+    .titled-links-list_drop-down &
+        cursor: pointer
+        user-select: none
+
+.titled-links-list__drop-down-arrow
+    .titled-links-list_drop-down_collapsed &
+        transform: scale(-1)
+
+.titled-links-list__header
+    font-size: 20px
+    line-height: 30px
+    
+.titled-links-list__links-list
+    list-style-type: none
+
+    .titled-links-list_drop-down_collapsed &
+        display: none
+
+.titled-links-list__element-list
+    @include margin-list-element(16px)
+
+.titled-links-list__link
+    color: inherit
+    text-decoration: inherit
+
+.titled-links-list__link:hover
+    text-decoration: underline

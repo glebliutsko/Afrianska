@@ -28,12 +28,14 @@
     .popup-menu_disabled &
         opacity: 0
 
-.popup-menu__navigation
+.popup-menu__content
     position: absolute
 
     max-width: 400px
     width: 85%
     height: 100%
+
+    padding: 100px 50px
 
     top: 0
     right: 0
@@ -44,5 +46,23 @@
     border-radius: 50px 0 0 0
     background: $popupMenuBackground
 
+    overflow-y: scroll
+
+    color: white
+
     .popup-menu_disabled &
         transform: translateX(400px)
+
+.popup-menu__close-button
+    @extend %without-style-button
+    position: fixed
+    
+    top: 29px
+    right: 18px
+
+.popup-menu__close-icon
+    width: 22px
+    height: 22px
+
+.popup-menu__navigation-section
+    @include margin-list-element(32px)
