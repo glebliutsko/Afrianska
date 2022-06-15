@@ -6,19 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.querySelector('.popup-menu__grey-overlay');
 
     function openMenu() {
-        menu.style.display = 'block';
-        setTimeout(() => {
-            menu.classList.add('popup-menu_enable');
-        }, 10);
+        menu.classList.remove('popup-menu_disabled');
     }
 
     function closeMenu() {
-        menu.classList.remove('popup-menu_enable');
-        document
-            .querySelector('.popup-menu__navigation')
-            .addEventListener('transitionend', () => {
-                menu.style.display = 'none';
-            }, {once : true});
+        menu.classList.add('popup-menu_disabled');
     }
 
     buttonOpen.addEventListener('click', openMenu);
