@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('../html-templates/head.html', {
+        "title": "Contact Us"
+    })
+</head>
+<body class="page-body">
+    @@include('../blocks/popup-menu/main.html', {
+        "classes": "page-body__popup-menu"
+    })
+
+    @@include('../blocks/header/main.html', {
+        "classes": "page-body__header"
+    })
+
+    <main class="page-body__main">
+        <section class="page-body__section">
+            @@include('../blocks/page-title/main.html', {
+                "classes": "",
+                "title": "Contact Us",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            })
+        </section>
+    </main>
+
+    @@include('../blocks/footer/main.html', {
+        "classes": "page-body__footer",
+        "element": "footer"
+    })
+</body>
+</html>
