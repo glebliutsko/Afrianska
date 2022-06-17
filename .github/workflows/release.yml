@@ -1,29 +1,68 @@
-name: Deploy to server
+name: Release
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - 'v*'
 
 jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install NodeJS
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Build
+      run: |
+        npm run build
+
+    - name: Archiving result build tar
+      run: |
+        cd dist &&
+        tar -cvf ../dist.tar * &&
+        cd .. &&
+        xz -v -9 dist.tar
+    
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        name: Version ${{ github.ref }}
+        files: |
+          dist.tar.xz
+    
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Install NodeJS
         uses: actions/setup-node@v3
         with:
           node-version: 18
+
       - name: Install dependencies
         run: |
           npm install
+
       - name: Build
         run: |
           npm run build
+
       - name: Сompression
         run: |
           npm run gzip
+
       - name: Install SSH keys
         run: |
           mkdir -p "$HOME/.ssh" &&
@@ -31,6 +70,7 @@ jobs:
           echo "${{ secrets.hostkey }}" > "$HOME/.ssh/known_hosts" &&
           chmod 700 "$HOME/.ssh" &&
           chmod 600 "$HOME/.ssh/id_ed25519"
+
       - name: Deploy
         run: |
           cd dist &&
