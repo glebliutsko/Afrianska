@@ -4,7 +4,7 @@
 ![wakatime](https://wakatime.com/badge/user/b9a8dcdf-a224-40bd-a624-f836cb1f05f2/project/f603fb07-5816-4ca8-9ab2-114cfda9ce60.svg)
 
 ## Ссылки
-- Посмотреть сайт можно тут: [mediasoft.liutsko.ru](https://mediasoft.liutsko.ru/)
+- Посмотреть сайт можно тут: [afrianska.glko.me](https://afrianska.glko.me/)
 - Задание: [Google Docs](https://docs.google.com/document/d/1U-glxdOEwNTyjy41y_vaAclkxMQmNGaeT-7sxsrdVVQ)
 - Макет в Figma'е: [Figma](https://www.figma.com/file/8MRflu28KdivJ1rWFYD3tA/HTML-CSS-course-2022)
 
