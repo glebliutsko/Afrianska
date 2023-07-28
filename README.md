@@ -1,8 +1,4 @@
-# Производственная практика MediaSoft
-Итоговое задание онлайн-курса по верстке веб-страниц.
-
-![wakatime](https://wakatime.com/badge/user/b9a8dcdf-a224-40bd-a624-f836cb1f05f2/project/f603fb07-5816-4ca8-9ab2-114cfda9ce60.svg)
-
+# Afrianska
 ## Ссылки
 - Посмотреть сайт можно тут: [afrianska.glko.me](https://afrianska.glko.me/)
 - Задание: [Google Docs](https://docs.google.com/document/d/1U-glxdOEwNTyjy41y_vaAclkxMQmNGaeT-7sxsrdVVQ)
